@@ -6193,3 +6193,3769 @@ Pravin
 
 ==============================================================================
 
+Hi Pandian,
+
+At this time I currently have no new updates, the team is aware of the issue and is continuing to investigate the root cause. We have tried a few different things but the same error remains with the same error code.
+
+I will reach out to them to see if they can give me any insight though on any progress and update you with the feedback I am provided. 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Manuel A.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9706121831&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_165387667510_Owner/pandian.ganesan@optum.com (Role)
+
+
+Thu Mar 24 2022
+18:34:40 GMT+0530 (India Standard Time)
+Hi Manual,
+
+Any Update on this?
+
+
+AWS_165387667510_Owner/pandian.ganesan@optum.com (Role)
+
+
+Tue Mar 15 2022
+07:12:48 GMT+0530 (India Standard Time)
+Thanks for the update
+
+
+Amazon Web Services
+
+
+Tue Mar 15 2022
+02:15:16 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Hi,
+
+Just wanted to keep you updated. My internal team found a slight error in the CloudFormation stack for the /index.html. However, even after fixing this, the issue remains. We continue to investigate this and please note I will update you with any other findings.
+
+Thank you
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Manuel A.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9706121831&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+Amazon Web Services
+
+
+Thu Mar 10 2022
+02:27:59 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Hi, 
+
+Thank you for the logs, I have continued to work on this with my internal team and will reach back out with any further information request or any updates provided to me.
+
+Thank you for your patience. 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Manuel A.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9706121831&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+=======================================================================
+
+Hi Surendar,
+
+Greetings!
+
+It was nice talking to you. We discussed about the issue faced in state machine to terminate the Ec2 instance. Below are the changes that we discussed.
+
+1. In TerminateInstances state, add below statement to get the instance Id
+
+ "InstanceIds.$": "States.Array($.instance_result.Instances[0].InstanceId)"
+
+2. If there is an error in any of the states add "ResultPath":null which will discard the output and forward the input passed to the state to terminate the instance.
+
+Please find the relevant documentation for reference below.
+
+https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-intrinsic-functions.html 
+https://docs.aws.amazon.com/step-functions/latest/dg/input-output-resultpath.html#input-output-resultpath-null 
+
+As discussed, I am resolving the case.
+
+Thanks and have a nice day ahead!
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Preeti S.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9701850581&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Mon Feb 28 2022
+10:41:40 GMT+0530 (India Standard Time)
+Create Image input - 
+
+{
+  "ImageId": "ami-07e7c21fcdf74e90a",
+  "InstanceType": "t2.micro",
+  "SubnetId": "subnet-0fca27af1beec4836",
+  "instance_result": {
+    "Groups": [],
+    "Instances": [
+      {
+        "AmiLaunchIndex": 0,
+        "Architecture": "x86_64",
+        "BlockDeviceMappings": [],
+        "CapacityReservationSpecification": {
+          "CapacityReservationPreference": "open"
+        },
+        "ClientToken": "7389f2c4-6739-4373-89db-00d18a7c50cc",
+        "CpuOptions": {
+          "CoreCount": 1,
+          "ThreadsPerCore": 1
+        },
+        "EbsOptimized": false,
+        "EnaSupport": true,
+        "EnclaveOptions": {
+          "Enabled": false
+        },
+        "Hypervisor": "xen",
+        "ImageId": "ami-07e7c21fcdf74e90a",
+        "InstanceId": "i-00eb40eee1a80d8c9",
+        "InstanceType": "t2.micro",
+        "LaunchTime": "2022-02-28T05:01:20Z",
+        "MetadataOptions": {
+          "HttpEndpoint": "enabled",
+          "HttpProtocolIpv6": "disabled",
+          "HttpPutResponseHopLimit": 1,
+          "HttpTokens": "optional",
+          "InstanceMetadataTags": "disabled",
+          "State": "pending"
+        },
+        "Monitoring": {
+          "State": "disabled"
+        },
+        "NetworkInterfaces": [
+          {
+            "Attachment": {
+              "AttachTime": "2022-02-28T05:01:20Z",
+              "AttachmentId": "eni-attach-0fe150bdd6eefb19e",
+              "DeleteOnTermination": true,
+              "DeviceIndex": 0,
+              "NetworkCardIndex": 0,
+              "Status": "attaching"
+            },
+            "Description": "",
+            "Groups": [
+              {
+                "GroupId": "sg-0bf77c69ef36d72c4",
+                "GroupName": "default"
+              }
+            ],
+            "InterfaceType": "interface",
+            "Ipv6Addresses": [],
+            "MacAddress": "0a:1f:35:7f:36:05",
+            "NetworkInterfaceId": "eni-0674936f6841a2ef6",
+            "OwnerId": "165387667510",
+            "PrivateDnsName": "ip-172-31-30-252.ec2.internal",
+            "PrivateIpAddress": "172.31.30.252",
+            "PrivateIpAddresses": [
+              {
+                "Primary": true,
+                "PrivateDnsName": "ip-172-31-30-252.ec2.internal",
+                "PrivateIpAddress": "172.31.30.252"
+              }
+            ],
+            "SourceDestCheck": true,
+            "Status": "in-use",
+            "SubnetId": "subnet-0fca27af1beec4836",
+            "VpcId": "vpc-0137cfaac4f49f8fd"
+          }
+        ],
+        "Placement": {
+          "AvailabilityZone": "us-east-1d",
+          "GroupName": "",
+          "Tenancy": "default"
+        },
+        "PrivateDnsName": "ip-172-31-30-252.ec2.internal",
+        "PrivateDnsNameOptions": {
+          "EnableResourceNameDnsAAAARecord": false,
+          "EnableResourceNameDnsARecord": false,
+          "HostnameType": "ip-name"
+        },
+        "PrivateIpAddress": "172.31.30.252",
+        "ProductCodes": [],
+        "PublicDnsName": "",
+        "RootDeviceName": "/dev/xvda",
+        "RootDeviceType": "ebs",
+        "SecurityGroups": [
+          {
+            "GroupId": "sg-0bf77c69ef36d72c4",
+            "GroupName": "default"
+          }
+        ],
+        "SourceDestCheck": true,
+        "State": {
+          "Code": 0,
+          "Name": "pending"
+        },
+        "StateReason": {
+          "Code": "pending",
+          "Message": "pending"
+        },
+        "StateTransitionReason": "",
+        "SubnetId": "subnet-0fca27af1beec4836",
+        "VirtualizationType": "hvm",
+        "VpcId": "vpc-0137cfaac4f49f8fd"
+      }
+    ],
+    "OwnerId": "165387667510",
+    "RequesterId": "432015868146",
+    "ReservationId": "r-0511f38d025d0a0fa"
+  },
+  "AssociateIamInstanceProfile": {
+    "IamInstanceProfileAssociation": {
+      "AssociationId": "iip-assoc-0861742fb42e76b2b",
+      "IamInstanceProfile": {
+        "Arn": "arn:aws:iam::165387667510:instance-profile/surendar_test_instance_profile",
+        "Id": "AIPASNAO7RA3GEA5BIOYX"
+      },
+      "InstanceId": "i-00eb40eee1a80d8c9",
+      "State": "associating"
+    }
+  },
+  "finding_results": {
+    "ExecutedVersion": "$LATEST",
+    "Payload": {
+      "InstanceId": "i-00eb40eee1a80d8c9",
+      "Findings": []
+    },
+    "SdkHttpMetadata": {
+      "AllHttpHeaders": {
+        "X-Amz-Executed-Version": [
+          "$LATEST"
+        ],
+        "x-amzn-Remapped-Content-Length": [
+          "0"
+        ],
+        "Connection": [
+          "keep-alive"
+        ],
+        "x-amzn-RequestId": [
+          "80460136-e355-4158-9dd1-2affe89202d6"
+        ],
+        "Content-Length": [
+          "53"
+        ],
+        "Date": [
+          "Mon, 28 Feb 2022 05:02:21 GMT"
+        ],
+        "X-Amzn-Trace-Id": [
+          "root=1-621c575d-3ada96216e5a83014d64e871;sampled=0"
+        ],
+        "Content-Type": [
+          "application/json"
+        ]
+      },
+      "HttpHeaders": {
+        "Connection": "keep-alive",
+        "Content-Length": "53",
+        "Content-Type": "application/json",
+        "Date": "Mon, 28 Feb 2022 05:02:21 GMT",
+        "X-Amz-Executed-Version": "$LATEST",
+        "x-amzn-Remapped-Content-Length": "0",
+        "x-amzn-RequestId": "80460136-e355-4158-9dd1-2affe89202d6",
+        "X-Amzn-Trace-Id": "root=1-621c575d-3ada96216e5a83014d64e871;sampled=0"
+      },
+      "HttpStatusCode": 200
+    },
+    "SdkResponseMetadata": {
+      "RequestId": "80460136-e355-4158-9dd1-2affe89202d6"
+    },
+    "StatusCode": 200
+  },
+  "remediation_results": {}
+}
+
+
+AWS_P0001489@optum.com
+
+
+Mon Feb 28 2022
+10:22:53 GMT+0530 (India Standard Time)
+04:54:27 AM Preeti: Hello, my name is Preeti.  I'm here to help you today.
+04:54:51 AM Preeti: may I please know your name?
+04:55:38 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Hi My name is surendar. 
+04:55:50 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: I am trying to delete the terminate instances 
+04:56:09 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: but it is not getting the instance ID from preious state output
+04:56:13 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: *previous
+04:56:24 AM Preeti: Hi Surendar, how are you today? I understand that you are using Step Functions to delete EC2 instance
+04:56:34 AM Preeti: oh ok. May I know the state machine arn?
+04:57:57 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: arn:aws:states:us-east-1:165387667510:execution:surendar_test_inspector_remediation
+04:58:12 AM Preeti: ok thanks. Let me look at state machine definition
+04:58:12 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Yes i am fine , Hope you are good too !!!!!!!
+04:58:21 AM Preeti: give me few minutes please
+04:58:27 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: sure
+05:02:24 AM Preeti: could we get into a call to discuss the issue? I would like to see the execution which failed. 
+05:03:00 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: yes
+05:03:16 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: can you provide me the chime link to join the meeting
+05:03:56 AM Preeti: sure
+05:04:14 AM Preeti: Click to join the meeting: https://chime.aws/6955286207 
+Meeting ID: 6955 28 6207
+A headset is recommended or you may use your computer’s microphone and speakers.
+
+05:05:54 AM Preeti: joining?
+05:06:03 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: joining in
+
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Mon Feb 28 2022
+10:22:48 GMT+0530 (India Standard Time)
+connection lost. connecting again
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Mon Feb 28 2022
+10:21:55 GMT+0530 (India Standard Time)
+cannot terminate the instances
+State Machine ARN: 
+
+========================================================================
+
+Hello Surendar, 
+
+Thank you for your time today on our Chat/Chime Session; it was a pleasure working with you.  You reached out to us today regarding issues with your Step function failing when trying to run the "AssociateIamInstanceProfile" action, with the operation failing with the below 
+-------------------------------------------------------------------------------------------------------
+errorCode: Client.UnauthorizedOperation
+errorMessage: You are not authorized to perform this operation. Encoded authorization failure message: K9NqgTD9zVhzkS5sHKss_Xd0kOzDCJ0UfuphfV4K_lF5_VOH4IlCrakYYq3WbcqxXiDQ5V_RJXfBmUinFozNrxlr2bRmB24j5zBF10hxNpbSlFjOGyMc7_rlfYH-L1bgMMdBltjEptejoeFIKq2mCovrMoHcOC74n4MsuxzM2MYDjumH7D5inQkMDU_fA2OO8kSumWhR8AvnfUhAjkQiIhsyV6y9G4lrVyHkf9uqyPoGdUJ_cJLkic6wnaSXTA_2CiGULVKwemOlsTP8pLrrTXIEB7NsUQ16BudV197fJc2mseOT5KoTIFKKFyGl6ys2GA9QDdD_W5rA_3w1g-oV8hrUtrJVZxQj2iBF5IOA-SLZ3iUnhUOWO43YKyyvoWgevJTJGjMlAgMFEEC41Amp9iNm_XXCnRQ-JORInYHJAbpWeyhZcJY3wwxA684hsE5ekSFfBMkEiSTQguaYC-6-_KhNouwXw6OgD4E3Uur2ZNCA7y9fvCOBBq9UlaCYscXlUxHn0F-jdPmXtatcNLMWz_GaM0-A6vVpT2d5LyjDbKo7dL7KWCifhXn2eggmiwxcfuePqJL7j7NKN0zJ8gZCjMp1JAyl
+-------------------------------------------------------------------------------------------------------
+
+We first began by following instructions in documentation [1] to decode the associated encoded error message above. This revealed the below:
+-------------------------------------------------------------------------------------------------------
+"context": {
+    "principal": {
+      "id": "AROASNAO7RA3MEJ2UU35N:uDWhQONWlxsOwWUWHHjOWqrMjqJIIrqF",
+      "arn": "arn:aws:sts::165387667510:assumed-role/surendar_test_stepfunction_role/uDWhQONWlxsOwWUWHHjOWqrMjqJIIrqF"
+    },
+    "action": "iam:PassRole",
+    "resource": "arn:aws:iam::165387667510:role/AmazonSSMRoleForInstancesQuickSetup",
+-------------------------------------------------------------------------------------------------------
+
+Understanding that we need to modify the IAM policy in the IAM role "arn:aws:iam::165387667510:role/surendar_test_stepfunction_role" so it has the required permission noted in the decoded messasge above, we proceeded to make the necessary modifications to the role's IAM policy.  
+
+Upon making the required changes to the IAM policy, you proceeded to run your step function again. This time were confirmed the FX was able to successfully run the "AssociateIamInstanceProfile" operation against EC2 instance "i-0627b1d8e3992e264". 
+
+Glad we could work together in getting this issue resolved! Per your request, I will proceed to close out the Ticket. Please feel free to reach out again if you have any questions or concerns.
+
+Thank you & have a great day!
+
+REFERENCE LINKS
+[1] Decoding Encoded Error Messages in AWS CLI: https://aws.amazon.com/premiumsupport/knowledge-center/aws-backup-encoded-authorization-failure/ 
+
+Please let us know if we helped resolve your issue: 
+
+ If YES, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9687430811&language=en&questionnaireId=Support-HMD-Yes 
+
+ If NO, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9687430811&language=en&questionnaireId=Support-HMD-No 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Ayo A.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9687430811&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Thu Feb 24 2022
+21:46:06 GMT+0530 (India Standard Time)
+02:56:28 PM Ayo: Hello!
+02:56:39 PM Ayo: Apoligies for the delay 
+02:56:42 PM Customer: HI My name is surendar
+02:56:56 PM Ayo: Hi Surendar!
+02:57:21 PM Customer: I wanted to provide the least permission to associate and disassociate the instance profile to a role
+02:57:32 PM Customer: so can you please least permissions 
+02:57:48 PM Ayo: Understood. 
+02:58:38 PM Ayo: So please correct me if I am mistaken, but you want the Instance role to only be able to associated & disassociate? 
+03:00:15 PM Ayo: You there, Surendar?
+03:01:09 PM Ayo: hello...?
+03:01:32 PM Customer: Hi I am gere
+03:01:37 PM Customer: here
+03:01:52 PM Ayo: Great so can you please confirm the above
+03:02:15 PM Customer: I have stepfunction , from stepfunction i wanted to associate and disassociate the instanceprofile
+03:03:09 PM Ayo: can we please get on chime call to review this properly & understand your use-case?
+03:03:26 PM Customer: sure 
+03:03:35 PM Customer: can we hve chime call in next 15 Mins
+03:04:11 PM Ayo: So 9:15 AM CST?
+03:04:35 PM Customer: yes
+03:04:45 PM Ayo: Understood. 
+03:04:46 PM Customer: meanwhile can you please provide the least permission 
+03:05:10 PM Ayo: That is why I have requested the chime meeting 
+03:05:26 PM Ayo: I need to understand what you are trying to achieve 
+03:05:28 PM Customer: and i am trying to decode the encoded error message it is showing syntax error
+03:05:39 PM Customer: aws sts decode-authorization-message --encoded-message -a5dsrlF6M9fJhbZIEOMRtHh-POWz7Iw3AWniaabSBlOVA4JRU5jQc9Zw6tiKr1HFkSkIQNo6uU2SCDHQObc3JceFOHJU-TeoO9hD
+cn13i38yagZgDl9I_hWCuXmGfRuthLLjIOszDDX-_RMfigupyqBa9zExEg3h_f5CNs2XlLtYvkwaO1m_OxjIw9uYtwjRfwDPe533ciZTNvJDBuafIzvK1wDvS6lXjLpKBPeUZ7eKmaBVGUW-VkMGwAQoBM5xbBN6YBPdHeb5l05IwypMjwcq91VUm0Kem0OP-IDRYMVPRcIAeHkK9ek
+kleB0p95WxCHoIWEK6MFlXLRP9FmHMZxaqSLJH-4w7I7KN2WZZqXP0hljqJlrmdvobCGFbBnsAXCMT1Sod-PDfO0ribYzXl0bMkqYWk478to5ZXo8pZrOoBi8bGUYX0Sno1T9iRF69FTaAYy2nJtryg7MmzWJy2v5jIC1BZMkBWWParebLE42dnu3i18-CDP4s6O-CTkbefSAITaNM5
+s3iL7wU9M90Oy-EcckoviJlEB748Yk0nhgmcLNOiOGjeQSl4lrImd0bvKCu60mamnIKr2KPQsZlVb3w
+Note: AWS CLI version 2, the latest major version of the AWS CLI, is now stable and recommended for general use. For more information, see the AWS CLI version 2 installation instructions at: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html 
+
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can r
+03:05:41 PM Ayo: Oh one moment. 
+03:06:05 PM Ayo: Please see this link: https://aws.amazon.com/premiumsupport/knowledge-center/aws-backup-encoded-authorization-failure/ 
+03:06:21 PM Customer: i refer that only 
+03:06:26 PM Customer: but i am getting error
+03:06:33 PM Customer: is there any reason
+03:06:56 PM Customer: can you please run the below command
+03:06:56 PM Customer: aws sts decode-authorization-message --encoded-message -a5dsrlF6M9fJhbZIEOMRtHh-POWz7Iw3AWniaabSBlOVA4JRU5jQc9Zw6tiKr1HFkSkIQNo6uU2SCDHQObc3JceFOHJU-TeoO9hDcn13i38yagZgDl9I_hWCuXmGfRuthLLjIOszDDX-_RMfigupyqBa9zExEg3h_f5CNs2XlLtYvkwaO1m_OxjIw9uYtwjRfwDPe533ciZTNvJDBuafIzvK1wDvS6lXjLpKBPeUZ7eKmaBVGUW-VkMGwAQoBM5xbBN6YBPdHeb5l05IwypMjwcq91VUm0Kem0OP-IDRYMVPRcIAeHkK9ekkleB0p95WxCHoIWEK6MFlXLRP9FmHMZxaqSLJH-4w7I7KN2WZZqXP0hljqJlrmdvobCGFbBnsAXCMT1Sod-PDfO0ribYzXl0bMkqYWk478to5ZXo8pZrOoBi8bGUYX0Sno1T9iRF69FTaAYy2nJtryg7MmzWJy2v5jIC1BZMkBWWParebLE42dnu3i18-CDP4s6O-CTkbefSAITaNM5s3iL7wU9M90Oy-EcckoviJlEB748Yk0nhgmcLNOiOGjeQSl4lrImd0bvKCu60mamnIKr2KPQsZlVb3w --query DecodedMessage --output text | jq '.'
+03:07:01 PM Ayo: What operation are you performinf thats giving the error?
+03:07:39 PM Customer: while i am trying to associate the instanceprofile from stepfunction i am getting the error
+03:07:54 PM Ayo: ohh is see!
+03:08:09 PM Customer: to analayse the error message i m running the decode command, that too giving me error
+03:08:16 PM Ayo: Which IAM user is performing this action please?
+03:08:40 PM Ayo: And what error do you get when you run decode cmd 
+03:08:42 PM Customer: can you please run the decode command and tell me what is the issue
+03:08:53 PM Ayo: WHta is the re
+03:08:59 PM Customer: Note: AWS CLI version 2, the latest major version of the AWS CLI, is now stable and recommended for general use. For more information, see the AWS CLI version 2 installation instructions at: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html 
+
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+aws: error: argument --encoded-message: expected one argument
+03:09:11 PM Ayo: what is the Request ID of the error?
+03:10:16 PM Customer: {
+    "eventVersion": "1.08",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROASNAO7RA3MEJ2UU35N:uPrSIeguKYTZtIstoATyYXpFEZGcGeOK",
+        "arn": "arn:aws:sts::165387667510:assumed-role/surendar_test_stepfunction_role/uPrSIeguKYTZtIstoATyYXpFEZGcGeOK",
+        "accountId": "165387667510",
+        "sessionContext": {
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROASNAO7RA3MEJ2UU35N",
+                "arn": "arn:aws:iam::165387667510:role/surendar_test_stepfunction_role",
+                "accountId": "165387667510",
+                "userName": "surendar_test_stepfunction_role"
+            },
+            "webIdFederationData": {},
+            "attributes": {
+                "creationDate": "2022-02-24T13:13:41Z",
+                "mfaAuthenticated": "false"
+            }
+        },
+        "invokedBy": "states.amazonaws.com"
+    },
+    "eventTime": "2022-02-24T13:13:46Z",
+    "eventSource": "ec2.amazonaws.com",
+    "eventName": "A
+03:10:54 PM Customer:  "requestID": "d2e385c1-5c31-403e-81d6-8fedae437be6",
+    "eventID": "7d8ed94d-1b2e-4c14-8ad3-ac62be1a4682",
+03:11:38 PM Customer: this request ID is generated when i trying to associate the instance profile from stepfunction
+03:12:44 PM Customer: can we connect on chime now
+03:12:57 PM Ayo: Yes
+03:13:03 PM Ayo: I sent the chime meeting link
+
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Thu Feb 24 2022
+21:31:31 GMT+0530 (India Standard Time)
+{
+    "DecodedMessage": "{\"allowed\":false,\"explicitDeny\":false,\"matchedStatements\":{\"items\":[]},\"failures\":{\"items\":[]},\"context\":{\"principal\":{\"id\":\"AROASNAO7RA3MEJ2UU35N:BQFpVmZbQOhjBIvlrkIDQiaRiXPMoNol\",\"arn\":\"arn:aws:sts::165387667510:assumed-role/surendar_test_stepfunction_role/BQFpVmZbQOhjBIvlrkIDQiaRiXPMoNol\"},\"action\":\"iam:PassRole\",\"resource\":\"arn:aws:iam::165387667510:role/AmazonSSMRoleForInstancesQuickSetup\",\"conditions\":{\"items\":[{\"key\":\"aws:Region\",\"values\":{\"items\":[{\"value\":\"us-east-1\"}]}},{\"key\":\"aws:Service\",\"values\":{\"items\":[{\"value\":\"ec2\"}]}},{\"key\":\"aws:Resource\",\"values\":{\"items\":[{\"value\":\"role/AmazonSSMRoleForInstancesQuickSetup\"}]}},{\"key\":\"iam:RoleName\",\"values\":{\"items\":[{\"value\":\"AmazonSSMRoleForInstancesQuickSetup\"}]}},{\"key\":\"aws:Type\",\"values\":{\"items\":[{\"value\":\"role\"}]}},{\"key\":\"aws:Account\",\"values\":{\"items\":[{\"value\":\"165387667510\"}]}},{\"key\":\"aws:ARN\",\"values\":{\"items\":[{\"value\":\"arn:aws:iam::165387667510:role/AmazonSSMRoleForInstancesQuickSetup\"}]}}]}}}"
+}
+
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Thu Feb 24 2022
+21:19:05 GMT+0530 (India Standard Time)
+{
+    "DecodedMessage": "{\"allowed\":false,\"explicitDeny\":false,\"matchedStatements\":{\"items\":[]},\"failures\":{\"items\":[]},\"context\":{\"principal\":{\"id\":\"AROASNAO7RA3MEJ2UU35N:BQFpVmZbQOhjBIvlrkIDQiaRiXPMoNol\",\"arn\":\"arn:aws:sts::165387667510:assumed-role/surendar_test_stepfunction_role/BQFpVmZbQOhjBIvlrkIDQiaRiXPMoNol\"},\"action\":\"iam:PassRole\",\"resource\":\"arn:aws:iam::165387667510:role/AmazonSSMRoleForInstancesQuickSetup\",\"conditions\":{\"items\":[{\"key\":\"aws:Region\",\"values\":{\"items\":[{\"value\":\"us-east-1\"}]}},{\"key\":\"aws:Service\",\"values\":{\"items\":[{\"value\":\"ec2\"}]}},{\"key\":\"aws:Resource\",\"values\":{\"items\":[{\"value\":\"role/AmazonSSMRoleForInstancesQuickSetup\"}]}},{\"key\":\"iam:RoleName\",\"values\":{\"items\":[{\"value\":\"AmazonSSMRoleForInstancesQuickSetup\"}]}},{\"key\":\"aws:Type\",\"values\":{\"items\":[{\"value\":\"role\"}]}},{\"key\":\"aws:Account\",\"values\":{\"items\":[{\"value\":\"165387667510\"}]}},{\"key\":\"aws:ARN\",\"values\":{\"items\":[{\"value\":\"arn:aws:iam::165387667510:role/AmazonSSMRoleForInstancesQuickSetup\"}]}}]}}}"
+}
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Thu Feb 24 2022
+20:59:23 GMT+0530 (India Standard Time)
+{
+	"DecodedMessage": "{\"allowed\":false,\"explicitDeny\":false,\"matchedStatements\":{\"items\":[]},\"failures\":{\"items\":[]},\"context\":{\"principal\":{\"id\":\"AROASNAO7RA3MEJ2UU35N:uDWhQONWlxsOwWUWHHjOWqrMjqJIIrqF\",\"arn\":\"arn:aws:sts::165387667510:assumed-role/surendar_test_stepfunction_role/uDWhQONWlxsOwWUWHHjOWqrMjqJIIrqF\"},\"action\":\"iam:PassRole\",\"resource\":\"arn:aws:iam::165387667510:role/AmazonSSMRoleForInstancesQuickSetup\",\"conditions\":{\"items\":[{\"key\":\"aws:Region\",\"values\":{\"items\":[{\"value\":\"us-east-1\"}]}},{\"key\":\"aws:Service\",\"values\":{\"items\":[{\"value\":\"ec2\"}]}},{\"key\":\"aws:Resource\",\"values\":{\"items\":[{\"value\":\"role/AmazonSSMRoleForInstancesQuickSetup\"}]}},{\"key\":\"iam:RoleName\",\"values\":{\"items\":[{\"value\":\"AmazonSSMRoleForInstancesQuickSetup\"}]}},{\"key\":\"aws:Type\",\"values\":{\"items\":[{\"value\":\"role\"}]}},{\"key\":\"aws:Account\",\"values\":{\"items\":[{\"value\":\"165387667510\"}]}},{\"key\":\"aws:ARN\",\"values\":{\"items\":[{\"value\":\"arn:aws:iam::165387667510:role/AmazonSSMRoleForInstancesQuickSetup\"}]}}]}}}"
+}
+
+=============================================
+
+Hi Surendar,
+
+Kanyisile here with AWS Premium Support.
+
+I see you have already created case with IAM with case ID 9687430811 kindly ask them about the decode error they will be able to assist further.
+
+It was a pleasure meeting you and have a great day further. 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Kanyisile N.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9687307491&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+Amazon Web Services
+
+
+Thu Feb 24 2022
+20:19:42 GMT+0530 (India Standard Time)
+
+Translate
+This case has been resolved. Please contact us again if you need further assistance.
+
+
+AWS_P0001489@optum.com
+
+
+Thu Feb 24 2022
+19:26:07 GMT+0530 (India Standard Time)
+02:09:24 PM Kanyisile: Hello, my name is Kanyisile.  I'm here to help you today.
+02:09:31 PM Kanyisile: May I please have your name.
+02:09:56 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: My name is surendar
+02:10:35 PM Kanyisile: Hi Surendar, its a pleasure to meet you, and how are you today?
+02:10:45 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: I am fine...
+02:10:50 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: how are you 
+02:11:38 PM Kanyisile: I am good thank you for asking. I understand you would like to know least permissions for an IAM EC2 profile
+02:11:52 PM Kanyisile: This depends you what you would like the profile to do. 
+02:11:53 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: can you please tell me the least permission to associate the and disassociate the instance profile
+02:12:12 PM Kanyisile: one moment please. 
+02:14:24 PM Kanyisile: can you kindly give me some background on what permissions you would like to give, is this for SSM for example or another service that needs the permissions for an instance profile?
+02:17:39 PM Kanyisile: for instance the following link has information on all the permissions you can grant, and depending you your business requirements you can set the permissions as needed: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html 
+02:19:34 PM Kanyisile: For example, the following IAM policy grants users permission to launch instances with an IAM role, or to attach or replace an IAM role for an existing instance using the AWS CLI.: {
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+         "ec2:RunInstances",
+         "ec2:AssociateIamInstanceProfile",
+         "ec2:ReplaceIamInstanceProfileAssociation"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "iam:PassRole",
+      "Resource": "arn:aws:iam::123456789012:role/DevTeam*"
+    }
+  ]
+}              
+02:19:58 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: can we have chime session on this 
+02:20:04 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: if it is possible
+02:21:01 PM Kanyisile: not even a problem I can create a call for us, however there is a dedicated IAM team that you can reach out to but lets first chat about it via chime. Please allow me a moment while I create a meeting for us. 
+02:21:17 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: okay
+02:22:17 PM Kanyisile: creating it now one moment please.
+02:25:38 PM Kanyisile: https://chime.aws/7252689200    kindly join '
+  
+
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Thu Feb 24 2022
+19:25:54 GMT+0530 (India Standard Time)
+what is the least IAM permission for a user, would be able to associate and de associate the instance profile
+
+===================================
+
+Please let us know if we helped resolve your issue: 
+
+If YES, click here:
+https://console.aws.amazon.com/support/feedback?eventId=9686509631&language=en&questionnaireId=Support-HMD-Yes 
+
+If NO, click here:
+https://console.aws.amazon.com/support/feedback?eventId=9686509631&language=en&questionnaireId=Support-HMD-No 
+
+
+
+Amazon Web Services
+
+
+Wed Mar 09 2022
+08:40:00 GMT+0530 (India Standard Time)
+
+Translate
+
+Hello,
+
+We haven't heard back from you regarding case 9686509631 for a while. For continued support regarding the same issue, you can contact us any time using the following URL:
+https://console.aws.amazon.com/support/home?#/case/?caseId=9686509631&displayId=9686509631&language=en 
+
+Please note that no action is required on your part if you wish this case to be resolved. However, if you want to close this case yourself, you could do so via the Support Center. If we haven't heard back from you within the next 72 hours we will mark the case as Resolved, although you can re-open the case any time using the link above.
+
+Best Regards,
+
+Amazon Web Services
+
+
+Amazon Web Services
+
+
+Wed Mar 02 2022
+08:04:09 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Hello ,
+
+Thank you for your patience on this case. I have an update from the Service Team.
+
+Service Team has closed the finding for the terminated instances as requested.
+
+I would request you to please check the Inspector finding and let me know if there are any terminated instances that still shows Inspector Finding.
+
+I hope the above information is helpful. In case of any other query or concern, please feel free to update the case and I will be glad to assist you further.
+
+Have a good day!
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Md juber A.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9686509631&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+Amazon Web Services
+
+
+Mon Feb 28 2022
+16:18:05 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Hello ,
+
+Hope you are doing well.
+
+I am still waiting on a response from the service team. I have escalated the case again to help expedite feedback on it. I apologise for the delay in resolution of your issue and will update you as soon as I receive any information regarding this case.
+
+In the meantime, please feel free to reach out with any other queries or concerns. I will be more than happy to assist you.
+
+Thank you for your patience. Have a great day ahead!
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Md juber A.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9686509631&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+Amazon Web Services
+
+
+Thu Feb 24 2022
+16:11:21 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Hello ,
+
+Thank you for your time in chat and chime call today. My name is Juber.
+
+Below is a short summary of what we discussed during the call. 
+
+You contacted us because instances that have been terminated are showing in the Inspector findings.
+
+I have reached out to our internal team on your behalf and made a request to investigate this. Once the service team is done with the investigation, I will reach back to you.
+
+Please note that I do not have ETA for this. I will keep a very close eye on the ticket and will let you as soon as I have updates from our internal team. Until then,I am going to change the status of this case to "Pending Amazon Action”.
+
+In the meantime, please feel free to reach out with any other queries or concerns. I will be more than happy to assist you.
+
+Have a good day!
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Md juber A.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9686509631&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+=====================================
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+Hello Arun,
+
+Many thanks for your patience while I was investigating this with the service team.
+
+I was updated today by the EMR Security Team.
+In order to understand the ownership of the of the vulnerability fix is necessary to understand the packages that triggered the alarm in the AWS Inspector.
+
+Generally speaking each case will be managed by the proper team that own the specific package (EMR team, or Amazon Linux Team ...).
+Please also note that some of the vulnerability detected by the AWS inspector may be false alarm, since the vulnerable classes or jar may not be used by EMR.
+However, each case requires proper investigation and evaluation.
+
+As general rule AWS will provide update for this when a fix is available by releasing new EMR release and normally not as AMI update.
+In particular case or condition the service team may also provide on the user request a bootstrap action script for a faster resolution.
+Please note that any vulnerability associated to packages or software that depends on the custom installation should be addressed on the customer end.
+
+Having said that, if you wish that the service team analyze this vulnerability report further, it's requested to share with us a detailed list of the vulnerability, including the information regarding the affected packages.
+Please make sure to provide as much detail as possible regarding the vulnerability, including the EMR release version and the impacted resources.
+
+I hope you find the above information clear and helpful.
+Should you have any questions or concerns, please feel free to write back.
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Andrea B.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9653269641&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+Amazon Web Services
+
+
+Mon Feb 28 2022
+15:11:30 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Hello Arun,
+
+This to let you know that I'm keep looking on this with the EMR internal team.
+
+Your query is now being evaluated by the EMR Security team.
+I'll get update you as soon I've a feedback on this.
+
+Many thanks for your extended patience on this.
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Andrea B.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9653269641&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_165387667510_Owner/arunkumar@optum.com (Role)
+
+
+Fri Feb 25 2022
+22:17:13 GMT+0530 (India Standard Time)
+Hi Andrea,
+
+Thanks. We are looking forward for the response as some of our teams are waiting on this to resolve these vulnerabilities. Please let us know as soon as you get some updated on this.
+
+
+Regards,
+Arun 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Hello
+
+It was a pleasure chatting with your today. My name is Tshepo, I am the AWS Support Engineer handling your case today.
+
+You reached out to AWS Premium Support on chat today because you were getting the error below when using run command to download a script to your instance. 
+
+"ERROR: http request failed. status:403 Forbidden statuscode:403"
+
+We connected over a chime call to investigate the permission issue that you were encountering when access the S3 bucket from the instance. During the session, we observed that the S3 buckets was encrypted but the instance profile role did not have KMS permissions to access the encryption key. 
+
+To resolve the issue, KMS permission were added on the policy and thereafter the instance could now download the file as required. 
+
+In addition to the above, you observed that, even though the file was downloaded, it was not executed as expected. 
+
+The AWS-RunRemoteScript document requires that you provide the source info and the command line parameters to execute that file.[1]
+
+Below is sample of the required parameters to be able to both download the file and also to execute it.
+
+response = ssm_client.send_command(
+         InstanceIds=[
+             'i-0627141864831ee75',
+             ],
+         DocumentName="AWS-RunRemoteScript",
+         Parameters = {
+             "sourceType": ["s3"],
+             "sourceInfo":["{"path":"https://s3.amazonaws.com/165387667510-glue-test-arun/CVE-2021-43527/CVE-2021-43527.sh"}" ],
+             "commandLine":["CVE-2021-43527.sh"]
+             },
+         )
+
+I hope you find the above useful.
+
+As confirmed on the call, I will go ahead and mark this case resolved.
+Feel free to reach out if you have any additional questions or concerns, I will be glad to assist.
+
+References:
+
+[1] Run shell scripts from Amazon S3 - Run a shell script from Amazon S3 (console) - https://docs.aws.amazon.com/systems-manager/latest/userguide/integration-s3-shell.html#integration-s3-ruby-console 
+
+Please let us know if we helped resolve your issue: 
+
+ If YES, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9646004681&language=en&questionnaireId=Support-HMD-Yes 
+
+ If NO, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9646004681&language=en&questionnaireId=Support-HMD-No 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Tshepo K.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9646004681&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+Amazon Web Services
+
+
+Fri Feb 18 2022
+16:56:08 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Hello
+
+It was a pleasure chatting with your today. My name is Tshepo, I am the AWS Support Engineer handling your case today.
+ 
+You reached out to AWS Premium Support on chat today because you were getting the error below when using run command to download a script to your instance. 
+
+"ERROR: http request failed. status:403 Forbidden statuscode:403"
+
+We connected over a chime call to investigate the permission issue that you were encountering when access the S3 bucket from the instance. During the session, we observed that the S3 buckets was encrypted but the instance profile role did not have KMS permissions to access the encryption key. 
+
+To resolve the issue, KMS permission were added on the policy and thereafter the instance could now download the file as required. 
+
+In addition to the above, you observed that, even though the file was downloaded, it was not executed as expected. 
+
+The AWS-RunRemoteScript document requires that you provide the source info and the command line parameters to execute that file.[1]
+
+Below is sample of the required parameters to be able to both download the file and also to execute it.
+
+response = ssm_client.send_command(
+         InstanceIds=[
+             'i-0627141864831ee75',
+             ],
+         DocumentName="AWS-RunRemoteScript",
+         Parameters = {
+             "sourceType": ["s3"],
+             "sourceInfo":["{"path":"https://s3.amazonaws.com/165387667510-glue-test-arun/CVE-2021-43527/CVE-2021-43527.sh"}" ],
+             "commandLine":["CVE-2021-43527.sh"]
+             },
+         )
+
+I hope you find the above useful.
+
+As confirmed on the call, I will go ahead and mark this case resolved.
+Feel free to reach out if you have any additional questions or concerns, I will be glad to assist.
+
+Please let us know if we helped resolve your issue: 
+
+ If YES, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9646004681&language=en&questionnaireId=Support-HMD-Yes 
+
+ If NO, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9646004681&language=en&questionnaireId=Support-HMD-No 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Tshepo K.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9646004681&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Fri Feb 18 2022
+15:23:12 GMT+0530 (India Standard Time)
+09:55:03 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Hi My name is surendar
+09:55:08 AM Tshepo: Hello, my name is Tshepo.  I'm here to help you today.
+09:55:33 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: we are trying to execute the remote script from S3 location
+09:55:44 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: but we are getting access denied error
+09:55:58 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: will you be able to help me in this
+09:56:18 AM Tshepo: How are you surendar
+09:57:25 AM Tshepo: Sure, I can help
+09:57:38 AM Tshepo: How are you running the script?
+09:57:45 AM Tshepo: SSM?
+09:58:22 AM Tshepo: May I have the instance ID that you are running the script against please
+09:58:23 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Yes
+09:58:37 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: i-0627141864831ee75
+09:59:09 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: sample command ID - 9b58b3d2-f4c1-490e-9365-a56ae8fa3c59
+09:59:43 AM Tshepo: Thanks
+09:59:51 AM Tshepo: Just a moment while I investigate
+10:00:54 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: okay thanks
+10:01:45 AM Tshepo: Has the role attached to the instance given permissions to the S3 bucket?
+10:01:57 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: s3 full access given
+10:02:21 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: and i tried aws s3 ls s3://bucketname/script_location - it is working
+10:02:30 AM Tshepo: To this role 	EC2 role for SSM for Quick-Setup?
+10:02:34 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: yes
+10:02:46 AM Tshepo: Cool
+10:03:02 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: IAM Role ARN - AmazonSSMRoleForInstancesQuickSetup
+10:03:21 AM Tshepo: Lets have a look over screenshare please
+10:03:26 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: sure 
+10:03:32 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: please share the chime session link
+10:04:04 AM Tshepo: v
+10:04:08 AM Tshepo: https://chime.aws/4194081894 
+10:24:17 AM Tshepo: Please reconnect
+
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Fri Feb 18 2022
+15:23:01 GMT+0530 (India Standard Time)
+Hi connecting again to check the S3 permission issue when running remote script
+
+
+Amazon Web Services
+
+
+Fri Feb 18 2022
+14:22:52 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Hello Surendar,
+
+Let me know if you are available to connect now ?
+You can join me on following link : https://chime.aws/4780155343 
+
+Please note that the meeting link will be valid for 10 mins. If you are currently busy with any high priority task, feel free to raise a live call/chat as per your availability.
+
+I can see you were facing issues to connect over a chat due to network disconnection, i would suggest you to please test call/email options in such cases.
+
+Looking forward to hearing back.
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Rutukesh P.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9646004681&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Hello,
+
+Tekena here from AWS.
+
+I notice you already resolved the case so it looks like you figured out the solution already but I wanted to update you on my findings.
+
+I was unable to find any specific samples for your use case but I did some tests and was able to execute a script from s3 using this Python code snippet below:
+
+####
+import boto3
+ssm_client = boto3.client('ssm') 
+response = ssm_client.send_command(
+             InstanceIds=[
+                "i-06594b370fxxxxxxxx"
+                     ],
+             DocumentName="AWS-RunRemoteScript",
+             Parameters={
+                "sourceType": ["S3"],
+                "sourceInfo": ["{\"path\":\"https://s3.eu-west-1.amazonaws.com/mybucket/hostname.ps1\"}" ],
+                "commandLine": ['hostname.ps1']
+                },
+            ),
+output = ssm_client.list_command_invocations(
+      InstanceId='i-06594b370xxxxxxxx',
+    )
+print(output)
+
+Please let me know if you have any questions and feel free to resolve the case if this is no longer needed.
+
+Thanks for your patience and have a lovely day. 
+
+Please let us know if we helped resolve your issue: 
+
+ If YES, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9640525151&language=en&questionnaireId=Support-HMD-Yes 
+
+ If NO, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9640525151&language=en&questionnaireId=Support-HMD-No 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Tekena O.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9640525151&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+Amazon Web Services
+
+
+Thu Feb 17 2022
+11:56:55 GMT+0530 (India Standard Time)
+
+Translate
+This case has been resolved. Please contact us again if you need further assistance.
+
+
+AWS_P0001489@optum.com
+
+
+Wed Feb 16 2022
+18:19:44 GMT+0530 (India Standard Time)
+00:50:02 PM Lance: Hello, my name is Lance.  I'm here to help you today.
+00:50:06 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Hi My name is surendar
+00:50:51 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: i am trying to run ssm command from python, but i am getting parameters doesnot support in remote shell script
+00:51:16 PM Lance: A pleasure to meet you Surendar, I hope you are well. please allow me a few moments to review case history and notes
+00:51:31 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: okay
+00:52:28 PM Lance: Okay I review my colleague was researching on a sample script to provide you
+00:52:35 PM Lance: let me follow up with him
+00:53:56 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: okay thanks
+00:55:39 PM Lance: okay I will be passing chat back to Tekena, please allow a few moments
+00:58:07 PM Lance: okay it seems he is having technical difficulty accepting chat
+00:58:17 PM Lance: however he has tested this and had success
+00:58:34 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: oh is it 
+00:58:39 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: can i have that sample code
+00:58:42 PM Lance: import boto3
+ssm_client = boto3.client('ssm') 
+response = ssm_client.send_command(
+             InstanceIds=[
+                "i-06594b370f1bfb2f5"
+                     ],
+             DocumentName="AWS-RunPowerShellScript",
+             Parameters={
+                'commands':[
+                     'hostname'
+                       ]
+                   },
+            ),
+output = ssm_client.list_command_invocations(
+      InstanceId='i-06594b370f1bfb2f5',
+    )
+print(output)
+00:59:13 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: it is working for me also 
+00:59:20 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: i need to run the script from S3
+01:00:02 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: so we need to specify the source type and source info and all
+01:00:16 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: that is where i am blocked
+01:02:11 PM Lance: okay, I may suggest that when Tekena becomes available he can reply to you on the case? 
+01:02:25 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: will you help me in this
+01:02:32 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: if possible
+01:03:20 PM Lance: okay, from specifying the source and source info, this is in python correct?
+01:03:33 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: right
+01:03:46 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: i want to fetch the script from S3 bucket and run command 
+01:04:08 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: there is an option but it is showing error, so probably it is syntax error
+01:04:13 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: so that i need your help
+01:05:10 PM Lance: okay, for python code we unfortunately do not debug code and are not python developers, as Tekena has mentioned, I can refer to documentation on boto however I cannot provide much insight into correcting syntax errors as thats not in our support scope
+01:05:57 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: i understand but if you provide sample code that would be helpful 
+01:09:21 PM Lance: We do not have any sample code as for this, only as provided by my colleague, for s3 boto reference you may review here: https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#service-resource  
+
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Wed Feb 16 2022
+18:19:37 GMT+0530 (India Standard Time)
+connection lost and connecting again
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Hello Surendar,
+
+Thank you for your time on chat and chime meeting earlier today. It was nice talking to you. I am sharing a brief summary of what we conversed.
+
+During our discussion, you mentioned that although you had built, associated layer to use boto3 version 1.21.0, Lambda function was still picking up the older version of 1.18.0 and wanted help on the same. When I looked at the Lambda layer export which you were using, I noticed that the layer was not maintaining the file hierarchy that was expected by Lambda: https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html#configuration-layers-upload  and also detailed how the layer needs to be built. I shared a sample latest version of boto3 with you which you tested out and it seemed to work successfully. Further, I also corrected the layer structure in your layer zip, tested it to work and shared it back with you. I also mentioned to provide adequate permissions to Lambda in its execution role when you had got the access denied exception in your code.
+
+As discussed earlier, I am closing this case, please feel free to open a new case in future if there are any other queries and we shall be happy to assist.
+
+Hope you have a good day ahead!
+
+Please let us know if we helped resolve your issue: 
+
+ If YES, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9638922401&language=en&questionnaireId=Support-HMD-Yes 
+
+ If NO, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9638922401&language=en&questionnaireId=Support-HMD-No 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Kirtana R.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9638922401&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+Amazon Web Services
+
+
+Wed Feb 16 2022
+12:09:35 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Hello Surendar,
+
+This is Kirtana here. As we were connected via chat, the chat was disconnected from your end due to some network issue. In order to continue our discussion, could you please join the chime meeting below?
+
+Personalized ID: 3997762988
+Meeting ID: 3997 76 2988
+Hosting Region: Singapore
+URL Link: https://chime.aws/3997762988 
+US dial-in: +1 206-462-5569
+US toll-free dial-in: +1 855-552-4463
+International dial-in numbers: https://chime.aws/dialinnumbers/ 
+
+Looking forward to connecting with you.
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Kirtana R.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9638922401&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Wed Feb 16 2022
+11:58:25 GMT+0530 (India Standard Time)
+06:30:01 AM Kirtana: Hello, my name is Kirtana.  I'm here to help you today.
+06:30:30 AM Kirtana: Can I have your name please ?
+06:31:30 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: my name is surendar
+06:31:41 AM Kirtana: Hello Surendar, hope you are doing good. 
+06:31:46 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: function arn : arn:aws:lambda:us-east-1:165387667510:function:surendar_test_inspecor_findings
+06:31:59 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Hey i am good thanks.. i hope you are good too
+06:32:08 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: layer arn
+06:32:09 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: arn:aws:lambda:us-east-1:165387667510:layer:boto3_cutom_layer:2
+
+06:32:48 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: i am trying to use latest boto3 version in aws lambda function , so i have created the new aws lambda layer and attached with function 
+06:33:07 AM Kirtana: I am doing good as well, thanks.. 
+
+ok, so, I understand that latest version of boto3 is not working at your end and you have attached the oto3_cutom_layer:2  to your Lambda but still latest version is not being picked up ?
+06:33:12 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: but still it is not updated one, i am getting inspector2 service not available error 
+06:33:22 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: yes 
+06:33:25 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: you are correct
+06:33:35 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: if you want we can chime call 
+06:33:50 AM Kirtana: can you please try to print "boto3.__version__" and let me know the result ?
+06:34:22 AM Kirtana: sure.. please give me few minutes, I am checking few things at my end.. will create meeting in few minutes and share
+
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Wed Feb 16 2022
+11:58:17 GMT+0530 (India Standard Time)
+boto3 latest version is not working
+Function ARN: 
+Error message: 
+CloudWatch logs: 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Hi Surendar,
+
+This is Zhenbang from AWS Premium Support. I hope you are having a great day. We had a chat today regarding the question you have regarding Boto3 in Lambda. It was very nice chatting with you!
+
+During our chat, we have found that the service you want to use, “inspector2” [1], is a new feature and it is not available in the Boto3 Lambda has in its runtimes [2]. Boto3 team releases new versions every few days, whereas the Lambda team takes more time to review a given version before launching it globally. In the interim, customers need to create their own Boto3 library to work around this.
+
+The easiest way to do is create a Lambda layer. A layer is a piece of additional libraries specific to a runtime that will be loaded when the function is started. It can also share among many functions. Note that, for Python, you may want to create layer for each individual runtime, e.g. Python 3.7, 3.8, 3.9 etc., instead of having one for all.
+
+You can follow the instruction here [3] to create a layer. Basically, you need to have an EC2 instance running Amazon Linux 2 and install the desired Python version. Then, you need to have a directory of this project (here called “boto3Py37”) and inside it, have another directory called “python” and install the latest Boto3 to it:
+
+    $ mkdir -p boto3Py37/python
+    $ cd boto3Py37
+    $ pip3 install boto3 -t python/
+
+Then, after examine the directory and make sure it has the latest Boto3, you can then run the following command to create a zip file:
+
+    $ zip -r boto3Py37.zip .
+
+In the zip file, it has to have the python/ directory in the root directory. Every libraries should be inside the python/ directory.
+
+Then, you can upload it as a layer and make sure you select the correct runtime for it. Next, adding it to your Lambda function. The loaded Boto3 library should has higher priority than the stock one. You can inspect the Boto3 version in Python like this:
+
+    print(boto3.__version__)
+
+I hope the information I provided is helpful. As discussed, I will mark this support case as resolved. However, please feel free to reach out to us again if you have further questions about this topic. Stay healthy and have a nice day!
+
+
+
+
+
+[1] https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html 
+[2] https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html 
+[3] https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html 
+
+Please let us know if we helped resolve your issue: 
+
+ If YES, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9632874141&language=en&questionnaireId=Support-HMD-Yes 
+
+ If NO, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9632874141&language=en&questionnaireId=Support-HMD-No 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Zhenbang X.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9632874141&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Tue Feb 15 2022
+18:14:29 GMT+0530 (India Standard Time)
+Error Message as per our chat -
+
+[ERROR] UnknownServiceError: Unknown service: 'inspector2'. Valid service names are: accessanalyzer, account, acm, acm-pca, alexaforbusiness, amp, amplify, amplifybackend, apigateway, apigatewaymanagementapi, apigatewayv2, appconfig, appflow, appintegrations, application-autoscaling, application-insights, applicationcostprofiler, appmesh, apprunner, appstream, appsync, athena, auditmanager, autoscaling, autoscaling-plans, backup, batch, braket, budgets, ce, chime, chime-sdk-identity, chime-sdk-messaging, cloud9, cloudcontrol, clouddirectory, cloudformation, cloudfront, cloudhsm, cloudhsmv2, cloudsearch, cloudsearchdomain, cloudtrail, cloudwatch, codeartifact, codebuild, codecommit, codedeploy, codeguru-reviewer, codeguruprofiler, codepipeline, codestar, codestar-connections, codestar-notifications, cognito-identity, cognito-idp, cognito-sync, comprehend, comprehendmedical, compute-optimizer, config, connect, connect-contact-lens, connectparticipant, cur, customer-profiles, databrew, dataexchange, datapipeline, datasync, dax, detective, devicefarm, devops-guru, directconnect, discovery, dlm, dms, docdb, ds, dynamodb, dynamodbstreams, ebs, ec2, ec2-instance-connect, ecr, ecr-public, ecs, efs, eks, elastic-inference, elasticache, elasticbeanstalk, elastictranscoder, elb, elbv2, emr, emr-containers, es, events, finspace, finspace-data, firehose, fis, fms, forecast, forecastquery, frauddetector, fsx, gamelift, glacier, globalaccelerator, glue, greengrass, greengrassv2, groundstation, guardduty, health, healthlake, honeycode, iam, identitystore, imagebuilder, importexport, inspector, iot, iot-data, iot-jobs-data, iot1click-devices, iot1click-projects, iotanalytics, iotdeviceadvisor, iotevents, iotevents-data, iotfleethub, iotsecuretunneling, iotsitewise, iotthingsgraph, iotwireless, ivs, kafka, kafkaconnect, kendra, kinesis, kinesis-video-archived-media, kinesis-video-media, kinesis-video-signaling, kinesisanalytics, kinesisanalyticsv2, kinesisvideo, kms, lakeformation, lambda, lex-models, lex-runtime, lexv2-models, lexv2-runtime, license-manager, lightsail, location, logs, lookoutequipment, lookoutmetrics, lookoutvision, machinelearning, macie, macie2, managedblockchain, marketplace-catalog, marketplace-entitlement, marketplacecommerceanalytics, mediaconnect, mediaconvert, medialive, mediapackage, mediapackage-vod, mediastore, mediastore-data, mediatailor, memorydb, meteringmarketplace, mgh, mgn, migrationhub-config, mobile, mq, mturk, mwaa, neptune, network-firewall, networkmanager, nimble, opensearch, opsworks, opsworkscm, organizations, outposts, personalize, personalize-events, personalize-runtime, pi, pinpoint, pinpoint-email, pinpoint-sms-voice, polly, pricing, proton, qldb, qldb-session, quicksight, ram, rds, rds-data, redshift, redshift-data, rekognition, resource-groups, resourcegroupstaggingapi, robomaker, route53, route53-recovery-cluster, route53-recovery-control-config, route53-recovery-readiness, route53domains, route53resolver, s3, s3control, s3outposts, sagemaker, sagemaker-a2i-runtime, sagemaker-edge, sagemaker-featurestore-runtime, sagemaker-runtime, savingsplans, schemas, sdb, secretsmanager, securityhub, serverlessrepo, service-quotas, servicecatalog, servicecatalog-appregistry, servicediscovery, ses, sesv2, shield, signer, sms, sms-voice, snow-device-management, snowball, sns, sqs, ssm, ssm-contacts, ssm-incidents, sso, sso-admin, sso-oidc, stepfunctions, storagegateway, sts, support, swf, synthetics, textract, timestream-query, timestream-write, transcribe, transfer, translate, voice-id, waf, waf-regional, wafv2, wellarchitected, wisdom, workdocs, worklink, workmail, workmailmessageflow, workspaces, xray
+Traceback (most recent call last):
+  File "/var/lang/lib/python3.7/imp.py", line 234, in load_module
+    return load_source(name, filename, file)
+  File "/var/lang/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/var/task/lambda_function.py", line 4, in <module>
+    inspector = boto3.client("inspector2")
+  File "/var/runtime/boto3/__init__.py", line 93, in client
+    return _get_default_session().client(*args, **kwargs)
+  File "/var/runtime/boto3/session.py", line 263, in client
+    aws_session_token=aws_session_token, config=config)
+  File "/var/runtime/botocore/session.py", line 851, in create_client
+    client_config=config, api_version=api_version)
+  File "/var/runtime/botocore/client.py", line 81, in create_client
+    service_model = self._load_service_model(service_name, api_version)
+  File "/var/runtime/botocore/client.py", line 123, in _load_service_model
+    api_version=api_version)
+  File "/var/runtime/botocore/loaders.py", line 132, in _wrapper
+    data = func(self, *args, **kwargs)
+  File "/var/runtime/botocore/loaders.py", line 379, in load_service_model
+    known_service_names=', '.join(sorted(known_services)))
+
+
+
+AWS_P0001489@optum.com
+
+
+Tue Feb 15 2022
+18:05:31 GMT+0530 (India Standard Time)
+00:37:35 PM Zhenbang X: Hello, my name is Zhenbang X.  I'm here to help you today. Can I have your name, please?
+00:37:58 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Hi My name is surendar
+00:38:09 PM Zhenbang X: Hi Surendar, how are you today?
+00:38:13 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: I am trying to run boto3 inspector2 code in lambda
+00:38:30 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Hey I am good !!!!! thanks for asking
+00:38:32 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: how are you 
+00:38:48 PM Zhenbang X: Not bad myself. Thanks for asking :)
+00:39:03 PM Zhenbang X: Can you let me know which Lambda function this is? ARN or function name and region
+00:39:45 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: arn:aws:lambda:us-east-1:165387667510:function:surendar-test
+00:39:51 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: us-east-1
+00:40:11 PM Zhenbang X: Thanks. Checking
+00:42:20 PM Zhenbang X: What is the error message you see in your execution?
+00:44:48 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: i have paste the error message on the case description
+00:45:18 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: there are is no service name like inspector2 
+00:46:10 PM Zhenbang X: Do you mean this: https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html 
+00:46:25 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: yes
+00:47:47 PM Zhenbang X: It might be that the boto3 your particular runtime isn't new enough to have that service in. Let me take a look of the Python3.7 runtime
+00:49:35 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: even python 3.9 also having same issue when we running the code in lambda
+00:52:02 PM Zhenbang X: I just checked the version of Boto3 used in Lambda is 1.18.55. It is released in Oct 2021, so it may not have the service there: https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html 
+00:52:45 PM Zhenbang X: What you can do is you can create a custom layer of the latest Boto3 and attach to your function. The layer needs to be version-specific, i.e. you need to create the layer corresponding to Python 3.7, 3.8, 3.9 etc.
+00:53:14 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: how to do that
+00:53:25 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: can we chime call on this
+00:55:08 PM Zhenbang X: Basically, you need to have an EC2 running Amazon Linux 2, and install the Python version you want for your Lambda function, and then pip install boto3 into a folder. Zip that folder and upload to Lambda layer and include the layer in your function.
+00:56:15 PM Zhenbang X: A more comprehensive explanation can be found here: https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html 
+
+This one is a bit more complicated because it also includes steps if your function is using ARM instead of x86. My explanation above is the minimal model of what you need
+00:57:20 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: hmmm
+00:57:55 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: why AWS not updated the boto3 version in python runtime 
+00:58:01 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: but document saying it is updated 
+00:58:15 PM Zhenbang X: Which document?
+00:58:23 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Name	Identifier	AWS SDK for Python	Operating system	Architectures
+Python 3.9
+
+python3.9
+
+boto3-1.18.55 botocore-1.21.55
+
+Amazon Linux 2
+
+x86_64, arm64
+00:58:36 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html 
+00:59:25 PM Zhenbang X: No, it's not updated, it's 1.18.55 like I mentioned
+00:59:48 PM Zhenbang X: The latest is 1.21.0
+01:00:25 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: when i checking the https://github.com/boto/boto3/blob/develop/CHANGELOG.rst#12016  link
+01:00:38 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: it is available from 1.21
+01:00:47 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: yes
+01:01:03 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: sorry it is available from 1.20.6
+01:01:55 PM Zhenbang X: Boto3 and Lambda are not the same team. Boto3 make new releases every few days. Lambda needs to review the updates from Boto3 and making changes every several months. They are not in sync. For the latest features, customer has to use their own Boto3 instead of the one comes with the official runtime.
+01:02:12 PM Zhenbang X: So that's what you need to do.
+01:02:54 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: okay i will check how i can do it
+01:02:58 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: thanks for your support
+01:03:03 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: we can close this case
+01:04:42 PM Zhenbang X: Sure thing. My high-level conclusion of what you need to do should be able to guide you. It's essentially "download the latest Boto3 to a folder called 'python' and zip everything and upload to Lambda Layer". Do make sure you installed the right version of Python though, they may not compatible cross versions.
+01:05:07 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: right
+01:05:09 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: thanks
+01:05:14 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: all good
+01:05:31 PM Zhenbang X: No problem. Please feel free to let us know if you have problems creating it. Have a nice day ahead Surendar!
+01:06:38 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: thanks you too
+
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Tue Feb 15 2022
+18:05:18 GMT+0530 (India Standard Time)
+connection lost connecting again
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Tue Feb 15 2022
+17:54:48 GMT+0530 (India Standard Time)
+how to run inspector2 boto3 in lambda. 
+
+Issue is python latest version doesnt have boto3 module 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Hello Surendar,
+
+Damini here from AWS Premium Support. It was nice speaking to you on call. I'm here to summarize the discussion we had over the call.
+
+You had contacted us today as you were experiencing below error while executing EC2 "RunInstances" API action using Step Functions although you have passed the "ImageId" value in the Step Input.
+
+    {
+     "error": "Ec2.Ec2Exception",
+    "cause": "Invalid id: \"$.input.ImageId\" (expecting \"ami-...\") (Service: Ec2, Status Code: 400, Request ID: dddf9c23-cd5c-423b-8c47-4dbf29fea4c2, Extended Request ID: null)"
+    }
+
+As mentioned on call, in order to specify that a parameter use a path to reference a JSON node in the input, end the parameter name with .$ [1]. After modifying the "Parameters" in the State definition as follows, the issue was resolved.
+
+                    "ImageId.$": "$.input.ImageId",
+                    "InstanceType.$": "$.input.InstanceType",
+                    "SubnetId.$": "$.input.SubnetId"
+
+However, we observed that the EC2 instance launched from the AMI terminated immediately with State Transition Reason as "Client.InternalError: Client error on launch". As described in the documentation [2], this error occurs when IAM Role/User used to launch the instance does not have the required permissions to access the AWS KMS keys used to decrypt and encrypt volumes. 
+
+Upon checking the AMI, we observed that the EBS snapshot was encrypted using KMS. Therefore, I would request you to update the KMS Key policy to allow below permissions [3] for the Step Function Execution Role and see if the issue is resolved.
+
+       "kms:Encrypt",
+       "kms:Decrypt",
+       "kms:ReEncrypt*",
+       "kms:GenerateDataKey*",
+       "kms:DescribeKey"
+
+I hope the information provided was helpful. Please don't hesitate to reach out to me should you have any further queries and I will be happy to assist.
+
+Wishing you a great day ahead!
+
+References:
+=========
+[1] https://docs.aws.amazon.com/step-functions/latest/dg/connect-parameters.html#connect-parameters-path 
+[2] https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/troubleshooting-launch.html#troubleshooting-launch-internal-solution 
+[3] https://docs.aws.amazon.com/autoscaling/ec2/userguide/key-policy-requirements-EBS-encryption.html#configuring-key-policies 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Damini Nixcy Mol A.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9631893281&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Tue Feb 15 2022
+11:55:18 GMT+0530 (India Standard Time)
+06:36:33 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Hi
+06:36:34 AM Damini Nixcy Mol Antony: Hello, my name is Damini Nixcy Mol Antony.  I'm here to help you today.
+06:36:38 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: My name is surendar
+06:36:45 AM Damini Nixcy Mol Antony: Hello Surendar
+06:36:51 AM Damini Nixcy Mol Antony: Hope you are doing well
+06:37:04 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: yeah thanks, how are you !!!!
+06:37:10 AM Damini Nixcy Mol Antony: I am good. Thank You!
+06:37:15 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: I am getting error - {
+  "error": "Ec2.Ec2Exception",
+  "cause": "Invalid id: \"$.input.ImageId\" (expecting \"ami-...\") (Service: Ec2, Status Code: 400, Request ID: dddf9c23-cd5c-423b-8c47-4dbf29fea4c2, Extended Request ID: null)"
+}
+06:37:27 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: my definition - {
+  "Comment": "inspector autoremdiation",
+  "StartAt": "RunInstances",
+  "States": {
+    "RunInstances": {
+      "Type": "Task",
+      "Parameters": {
+        "MaxCount": 1,
+        "MinCount": 1,
+        "ImageId": "$.input.ImageId",
+        "InstanceType": "$.input.InstanceType",
+        "SubnetId": "$.input.SubnetId"
+      },
+      "Resource": "arn:aws:states:::aws-sdk:ec2:runInstances",
+      "ResultPath": "$.instance_result",
+      "End": true
+    }
+  }
+}
+06:37:39 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: my input - {
+  "input": {
+     "ImageId": "ami-001b9e3176648ea36",
+  	"SubnetId": "subnet-0fca27af1beec4836",
+  	"InstanceType": "t2.micro"
+  }
+06:37:44 AM Damini Nixcy Mol Antony: $.input.ImageId -- What is the value passed?
+06:37:59 AM Damini Nixcy Mol Antony: Can you ping me the StateMachine ARN?
+06:40:58 AM Damini Nixcy Mol Antony: Hello, Are we connected?
+06:42:08 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: yes
+06:42:21 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: arn:aws:states:us-east-1:165387667510:execution:inspector-surendar-machine:0a54d634-7409-48b6-52c9-59378687c954
+06:42:26 AM Damini Nixcy Mol Antony: Can we get on a chime call?
+06:42:35 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: "ImageId": "ami-001b9e3176648ea36",
+06:42:38 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: sure
+06:42:41 AM Damini Nixcy Mol Antony: Click to join the meeting: https://chime.aws/9940675385 
+Meeting ID: 9940 67 5385
+
+06:55:09 AM Damini Nixcy Mol Antony: https://docs.aws.amazon.com/step-functions/latest/dg/connect-parameters.html#connect-parameters-path 
+07:06:13 AM Damini Nixcy Mol Antony: 
+
+    kms:CreateGrant
+
+    kms:Decrypt
+
+    kms:DescribeKey
+
+    kms:GenerateDataKeyWithoutPlainText
+
+    kms:ReEncrypt
+
+07:07:33 AM Damini Nixcy Mol Antony: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/troubleshooting-launch.html#troubleshooting-launch-internal-cause 
+07:07:44 AM Damini Nixcy Mol Antony: A snapshot specified in the block device mapping for the AMI is encrypted and you do not have permissions to access the KMS key for decryption or you do not have access to the KMS key to encrypt the restored volumes.
+07:16:03 AM Damini Nixcy Mol Antony: EC2 Image Builder 	arn:aws:states:::aws-sdk:imagebuilder:[apiAction]
+
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Tue Feb 15 2022
+11:55:05 GMT+0530 (India Standard Time)
+cannot create the EC2 instance using custom input
+State Machine ARN: 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Hello Surendar,
+
+This is Michael here from AWS Premium Support with a summary of our earlier session.
+
+Thank you for your time and efforts during our chime and screen share meeting. You had reached out to us to confirm why you were seeing a large list of EC2 instance IDs when programmatically querying your Inspector finding reports via the CLI. 
+
+During the investigation, we were able to establish that these instance IDs belonged to closed findings from previous EC2 instances that was launched in the account.
+
+Next, you queried how you can specify that only the current active findings should be included in your programmatic query.
+
+By using the "create-findings-report" API via the CLI [1], you can request a report from Inspector programmatically. When using this API, you're able to specify a filter in the request parameters which narrows down  the report's scope to your active findings.
+
+At this point in the call, all your questions was answered and you're happy for us to close this case. Please do feel free to reach out to us again should you have any further questions or concerns.
+
+Wishing you an AWSome week ahead!
+
+=========
+Resources:
+=========
+
+[1] create-findings-report - https://docs.aws.amazon.com/cli/latest/reference/inspector2/create-findings-report.html 
+
+Please let us know if we helped resolve your issue: 
+
+ If YES, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9598832941&language=en&questionnaireId=Support-HMD-Yes 
+
+ If NO, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9598832941&language=en&questionnaireId=Support-HMD-No 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Michael v.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9598832941&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Thu Feb 10 2022
+14:00:33 GMT+0530 (India Standard Time)
+08:34:58 AM Michael: Hello, my name is Michael.  I'm here to help you today. May I know your name please?
+08:37:56 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Hi
+08:38:01 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: My name is surendar
+08:38:16 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: i have run the api calls and getting some big results,
+08:38:30 AM Michael: Thanks Surendar, could you please give me a moment to review the case history? 
+08:38:35 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: it contains lot of instance IDs , those are not in my account
+08:39:04 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: sure , if it is okay we can have chime session
+08:42:56 AM Michael: Thanks for your patience, just to confirm you have been able to successfully execute the API and you're getting a lot of results from listing the findings via API. 
+
+At this point, you're seeing instance ID's that are not in your account and would like to investigate this, correct? 
+08:43:17 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: yes 
+08:43:39 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: if i can share the screen, we can isolate the issue easily
+08:43:52 AM Michael: Okay, please give me a moment to set the meeting up 
+08:43:57 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: thanks
+08:45:23 AM Michael: https://chime.aws/7792477784 
+Meeting ID: 7792 47 7784
+U.S. Toll: +1 206-462-5569
+Meeting PIN: 7792 47 7784
+U.S. Toll-free: +1 855-552-4463
+International: https://chime.aws/dialinnumbers/ 
+
+09:26:30 AM Michael: Thank you for your time on the meeting, I'll be sure to send a summary and then cllose the case as discussed. Have a great day :) 
+
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Thu Feb 10 2022
+14:00:27 GMT+0530 (India Standard Time)
+chat got disconnected, connecting again
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Thu Feb 10 2022
+13:56:44 GMT+0530 (India Standard Time)
+when i run the command I can see there are lot of conflict with cli result and console 
+
+
+Amazon Web Services
+
+
+Thu Feb 10 2022
+13:15:19 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Hello Surendar, 
+
+Thank you so much for contacting AWS Premium Support today. This is Man Man who was assisting you on the live contact, it was a pleasure chatting with you earlier. 
+
+I see that you attempted to re-initiate a chat session but the chat was not initiated. I apologize for the inconvenience if there was a connection issue. If a re-initiate of chat still fail, please kindly share a contact number with country code, a timeframe and time zone, and we will attempt to reach out to you instead. 
+
+I'm sending this email as a brief summary of previous chat session. 
+
+The chat is about you want to use Step Functions to list inspector findings. During the chat, we discussed:
+
+- We confirmed that Step Function currently does not have SDK integration with inspector2 service. I checked internally and had raised a feature request to have Step Functions SDK integration to support Inspector2 service. Since the request will be handled by the service team, I apologize that Premium Support does not have visibility on their timeline and not able to provide an ETA at this time. New feature implementation will be published on the AWS Blog [1] and AWS New [2], I do recommend to follow them for any updates. You are also more than welcome to open a support case to request a status update, and we will gladly provide any information to the best we can. 
+
+[1] https://aws.amazon.com/blogs/ 
+[2] https://aws.amazon.com/new/ 
+
+- The inspector classic assessment is already checking only EC22 instances, so the instance type would always be EC22 instances. On the other hand, Inspector2 service will scan both EC2 instance ECR images. 
+
+-  For Inspector Classic CLI/ boto3 SDK, the ListFindings API support using the Filter option to filter the findings [3]. For example, the following are some sample CLI commands:
+
+// This will filter findings with specific instance-id
+aws inspector list-findings --filter agentIds=i-00xxxxxxxxxx
+
+// This will filter findings with specific ENI-id
+aws inspector list-findings --filter 'attributes={key=ENI,value=eni-0xxxxxxx}'
+
+[3] https://docs.aws.amazon.com/inspector/v1/APIReference/API_ListFindings.html 
+
+- I did some further testing on Step Functions and was able to get the following state definition working with the above Filter option. For example, this state machine will output the findings of the instance-id:
+
+```
+{
+    "Comment": "InspectorClassicListFindings",
+    "StartAt": "ListFindings",
+    "States": {
+        "ListFindings": {
+            "Type": "Task",
+            "End": true,
+            "Parameters": {
+                     "Filter": {"AgentIds":["i-00xxxxxxxxxx"]}
+            },
+            "Resource": "arn:aws:states:::aws-sdk:inspector:listFindings"
+        }
+    }
+}
+```
+
+- Given Step Functions currently has no native support on Inspector2 service, a workaround would be to use Step Function to invoke a Lambda function [4], and then have the Lambda function code to call Inspector2 ListFindings API  instead. The Inspector2 ListFindings API also has a filterCriteria option to filter findings [5]. 
+
+[4] https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-creating-lambda-state-machine.html 
+[5] https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.list_findings 
+
+I apologize again for the impact due to the lack of feature support at this time. Please let me know if you have any questions or concerns, and I will do my best to assist.
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Man Man C.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9598832941&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Hello Surendar,
+
+It was a pleasure chatting with you.
+
+This is a brief summary of our discussion. You had reached out to us as you were facing an issue while making AWS Inspector’s ListFindings API[1] call, using Step Functions. The error message suggested that the field “severities” is not supported by Step Functions. On replicating the issue, I could see that ListFindings has a “filter” parameter, that has “severities” as an attribute and on trying the following snippet, I was able to successfully create a state machine :
+
+
+——————————————————————————————————————————————————————
+
+"Parameters": {
+        "Filter" : {
+          "Severities": [
+          "High"
+        ]}
+      }
+
+——————————————————————————————————————————————————————
+
+Note :- Please note that Parameter names should be in Pascal case.
+
+Further, we went on a call and were able to successfully create a state machine and run an execution. We also discussed about Optimised integrations[2] in Step Functions and SDK integrations[3]. 
+
+I hope I could help. As discussed I will be resolving this case for now. However, feel free to get back to us in case of any other queries or concerns and we will be happy to assist.
+
+Have a nice day !
+
+References:
+[1] https://docs.aws.amazon.com/inspector/v1/APIReference/API_ListFindings.html 
+[2] Optimized integrations for Step Functions - https://docs.aws.amazon.com/step-functions/latest/dg/connect-supported-services.html 
+[3] https://docs.aws.amazon.com/step-functions/latest/dg/supported-services-awssdk.html 
+
+Please let us know if we helped resolve your issue: 
+
+ If YES, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9598661011&language=en&questionnaireId=Support-HMD-Yes 
+
+ If NO, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9598661011&language=en&questionnaireId=Support-HMD-No 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Nirupam S.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9598661011&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Wed Feb 09 2022
+12:44:07 GMT+0530 (India Standard Time)
+07:15:11 AM Nirupam: Hello, my name is Nirupam.  I'm here to help you today.
+07:15:18 AM Nirupam: May I know your name please?
+07:15:26 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: HI My name is surendar
+07:15:56 AM Nirupam: Hi Surendar, hope you are doing well. Please give me a minute to go through your case notes
+07:16:27 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com:  I am trying to list the aws inspector findings in step function and initiate the lambda as per the result 
+07:16:46 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: error is - There are Amazon States Language errors in your state machine definition. Fix the errors to continue.
+The field "severities" is not supported by Step Functions
+07:17:32 AM Nirupam: Okay, the API call is listfindings ?
+07:18:38 AM Nirupam: I am checking the ListFindings API syntax, just give me few minutes 
+07:19:16 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: yes 
+07:19:30 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: {
+    "Comment": "inspector autoremdiation",
+    "StartAt": "ListFindings",
+    "States": {
+      "ListFindings": {
+        "Type": "Task",
+        "End": true,
+        "Parameters": {
+            "severities": [
+              "High"
+            ]
+        },
+        "Resource": "arn:aws:states:::aws-sdk:inspector:listFindings"
+      }
+    }
+  }
+07:22:38 AM Nirupam: Thanks for sharing this, I am trying to quickly replicate the issue
+07:23:26 AM Nirupam: Although Parameter namess should be Pascal case, but give me few minutes to replicate
+07:23:30 AM Nirupam: names*
+07:25:48 AM Nirupam: Okay, so I believe its an API syntax issue
+07:26:13 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: okay
+07:26:23 AM Nirupam: ListFindings has a "filter" parameter, that has severities as an attribute
+07:26:24 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: can we have a call to quickly check on this
+07:26:26 AM Nirupam: I tried this
+07:26:30 AM Nirupam: "Parameters": {
+        "Filter" : {
+          "Severities": [
+          "High"
+        ]}
+      }
+07:26:32 AM Nirupam: and it worked
+07:26:49 AM Nirupam: can you try this snippet in the definition of your state machine?
+07:27:08 AM Nirupam: If it doesn't work, do let me know, and we can quickly hop on a call
+07:27:26 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: okay
+07:27:32 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: but i do have other doubts as well 
+07:27:36 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: with step function
+07:27:48 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: so it is possible to jump on call
+07:27:57 AM Nirupam: sure, could you please share your number?
+07:28:01 AM Nirupam: with country code
+07:28:11 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: chime is fine for me 
+07:28:18 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: i can share the screen 
+07:28:18 AM Nirupam: alright, give me a minute
+07:28:26 AM Nirupam: I will share a meeting link
+07:29:09 AM Nirupam: https://chime.aws/2472226895 
+07:30:44 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: thanks
+07:31:18 AM Nirupam: no problem! 
+07:36:59 AM Nirupam: https://docs.aws.amazon.com/step-functions/latest/dg/supported-services-awssdk.html 
+07:37:14 AM Nirupam: https://docs.aws.amazon.com/step-functions/latest/dg/connect-supported-services.html 
+07:47:53 AM Nirupam: I will send a brief summary of our discussion via an email in some time. Thank you for your time, have a nice day !
+
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Wed Feb 09 2022
+12:43:59 GMT+0530 (India Standard Time)
+connection lost so connecting again
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Wed Feb 09 2022
+12:43:40 GMT+0530 (India Standard Time)
+connecting again
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Wed Feb 09 2022
+12:37:06 GMT+0530 (India Standard Time)
+how to add aws inspector in step function .
+
+we tried to get the aws inspector findings using step function and remediate with lambda function but we are not able to add listfindings in stepfunction
+State Machine ARN: 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Hello there,
+
+Thank you for contacting AWS Premium Support. This is Venkat with a follow up. It was a pleasure chatting with you. 
+
+During the chat you mentioned that you would like to integrate AWS Inspector and Security Hub.
+
+While on chat I confirmed that you can enable integration of AWS Inspector with SecurityHub. You can enable integration through SecurityHub Integration console (it should be automatically enabled) [1] [2].
+
+For automatic remediation of AWS Inspector, right now we don’t have any automated actions available unfortunately. The AWS Inspector remediations has Information on how to remediate a finding like a comment section and there are no SSM documents for automatic remediations of AWS Inspector. [3]
+
+For remediating SecurityHub findings, we have a solution in place which you can use to see if that works for your use case. AWS Security Hub Automated Response and Remediation includes the playbook remediations for the security standards defined as part of the Center for Internet Security (CIS) AWS Foundations Benchmark v1.2.0 and AWS Foundational Security Best Practices (AFSBP) v.1.0.0, and Payment Card Industry Data Security Standard (PCI-DSS) v3.2.1. [4]
+
+The solution deploys Lambdas, SSM Automation Documents, Step functions etc. to autoremediate and send SNS notifications from Administrator account to member accounts. [5] To be honest I have never really deployed it myself and also, we cannot entirely support this from our end because it is a solution and not a service feature which makes this a bit out of scope of AWS Premium Support. That being said, I do have experience with troubleshooting this SHARR issues and I will be happy to help in every way I can. 
+
+I hope this helped. Please let me know if you have any further questions and I will be happy to assist.
+
+Have a lovely day :)
+
+References:
+ 
+[1] Integration with AWS Security Hub - https://docs.aws.amazon.com/inspector/v1/userguide/securityhub-integration.html 
+
+[2] Integration with AWS Security Hub - Enabling and configuring the integration - https://docs.aws.amazon.com/inspector/latest/user/securityhub-integration.html#integrations-security-hub-enabling-configuring 
+
+[3] Remediation - https://docs.aws.amazon.com/inspector/v2/APIReference/API_Remediation.html 
+
+[4] Automatically address security threats with predefined response and remediation actions in AWS Security Hub - https://docs.aws.amazon.com/solutions/latest/aws-security-hub-automated-response-and-remediation/welcome.html 
+
+[5] https://aws.amazon.com/blogs/security/how-to-remediate-amazon-inspector-security-findings-automatically/ 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Venkatakrishnan G.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9587819481&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Mon Feb 07 2022
+18:46:30 GMT+0530 (India Standard Time)
+01:44:11 PM Venkatakrishnan: Hello, my name is Venkatakrishnan.  I'm here to help you today.
+01:45:24 PM Venkatakrishnan: May I know your name please? 
+01:48:06 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: My name is surendar
+01:48:14 PM Venkatakrishnan: Hey Surendar. How are you?
+01:48:24 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Hi I am fine, thanks
+01:48:26 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: how are you 
+01:48:52 PM Venkatakrishnan: I am good thanks for asking :) Sorry to keep you waiting. I see you would like to import findings to SecurityHub dashboard from Inspector. 
+01:49:08 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: also i want to remediate automatically
+01:49:29 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: how i can find remediation steps for security findings
+01:50:01 PM Venkatakrishnan: Right. We are talking about Inspector V2 or classic? 
+01:50:15 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: inspector V2
+01:51:19 PM Venkatakrishnan: Cool. Integration is really quick. you go to Security Hub integrations, look for inspector and hit enable
+01:51:26 PM Venkatakrishnan: [] Integration with AWS Security Hub - https://docs.aws.amazon.com/inspector/v1/userguide/securityhub-integration.html 
+
+[] Integration with AWS Security Hub - Enabling and configuring the integration - https://docs.aws.amazon.com/inspector/latest/user/securityhub-integration.html#integrations-security-hub-enabling-configuring 
+
+
+01:51:44 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: it is already integrated 
+01:51:49 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: in my account
+01:52:05 PM Venkatakrishnan: Cool. The remediation part. thats more complex to answer. Please give me a moment
+01:52:15 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: we need help in auto remediation and where remediation documented in aws documentation
+01:52:41 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: quick question: is there any way that we can remediate the security findings using security hub
+01:53:25 PM Venkatakrishnan: The reason being, Inspector V2 is relatively new and the remediation recommendations would be there. but you would have to create a custom remediation steps for automatic remediation.
+01:54:07 PM Venkatakrishnan: For securityHub, we have a solution called SHARR. SecurityHub automatic Remediation Response. You can look into that and see if its feasible for you to set it up. 
+01:54:19 PM Venkatakrishnan: please give me a moment. let me find those docs for you
+01:54:43 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: okay
+01:54:44 PM Venkatakrishnan: https://aws.amazon.com/blogs/security/how-to-deploy-the-aws-solution-for-security-hub-automated-response-and-remediation/ 
+
+[] Automated deployment - Stacks - https://docs.aws.amazon.com/solutions/latest/aws-security-hub-automated-response-and-remediation/deployment.html 
+
+01:55:08 PM Venkatakrishnan: Thats for SecHub auto remediation. Its a solution by AWS using SSM, Step functions etc. 
+01:56:00 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: okay
+01:56:16 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: can we have a call quickly discuss on this
+01:57:11 PM Venkatakrishnan: I dont think we have automatic remediations for Inspector findings. Are you looking to deploy a centralized architecture? like one central account with many member accounts? 
+01:57:33 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: it is possible ??
+01:58:31 PM Venkatakrishnan: yes ofcourse
+01:59:06 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: okay can we discuss briefly on the call 
+02:00:29 PM Venkatakrishnan: if you look at the blog I sent you for SHARR, that is the one you deploy the SecHub admin account. Sure we can. now I have never really deployed it myself and to be honest, we cannot entirely support this from our end because its a solution and not a service feature. That being said, I do have experience with troubleshooting this SHARR issues so I will be happy to help in anyway I can
+02:01:17 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: SHAAR need primary account , (if my account joined in organization)
+02:01:51 PM Venkatakrishnan: Yeah in that case, its your SecHub admin account. Delegated admin account for your SecurityHub or the centralized account
+02:02:15 PM Venkatakrishnan: thats where you deploy this and setup the roles for SHARR to do its thing
+02:02:36 PM Venkatakrishnan: You can see the solution overview. 
+02:03:21 PM Venkatakrishnan: Basically member account send findings to admin account -> you trigger SHARR through CloudWatch -> Lambda from SHARR assumes the role in the member account and makes API calls for you. Finally SHARR notifies you through SNS
+02:04:47 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: how this will remediate the findings
+02:04:56 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: where the remediation steps are stored
+02:06:23 PM Venkatakrishnan: The solution uses SSM automation documents to deploy automation actions. you can make these docs customized as well
+02:07:31 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: one moment
+02:08:51 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: that complete documentation is all about SHARR
+02:09:33 PM Venkatakrishnan: Yes the remediation of Inspector I dont think currently is possible. I need to verify that from end offline but right now I think there are any automations for Inspector findings
+02:10:17 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: okay please check and let me know, how we can remediate the inspector findings
+02:11:49 PM Venkatakrishnan: Sure I will. I will have to take this offline. I did a quick check on SSM documents present I dont see anything relevant to the inspector findings specifically. but ll see if there anything we can use offline if that is okay with you. 
+02:12:17 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: thanks
+02:12:25 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: we will connect tomorrow again 
+02:12:45 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: meantime i will look into the documentation 
+02:12:49 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: thank you
+02:12:54 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: good day to you
+02:13:02 PM Venkatakrishnan: Sure. Have a lovely day :) 
+
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Mon Feb 07 2022
+18:46:12 GMT+0530 (India Standard Time)
+how to integrate AWS inspector and security Hub and autoremediate the findings
+Integration type: AWS service Integrations
+Finding ID / ARN: 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Hello,
+
+We haven't heard back from you regarding case 9573050761 for a while. For continued support regarding the same issue, you can contact us any time using the following URL:
+https://console.aws.amazon.com/support/home?#/case/?caseId=9573050761&displayId=9573050761&language=en 
+
+Please note that no action is required on your part if you wish this case to be resolved. However, if you want to close this case yourself, you could do so via the Support Center. If we haven't heard back from you within the next 72 hours we will mark the case as Resolved, although you can re-open the case any time using the link above.
+
+Best Regards,
+
+Amazon Web Services
+
+
+Amazon Web Services
+
+
+Fri Feb 04 2022
+15:17:11 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Hi there, 
+
+Nataizya here from AWS. 
+
+A chat session was opened with the need to find out how to run a web based application in AWS Batch and scale the appication in response to load.
+
+We got on a screenshare and discussed multiple features of Batch. I shared the link in [1] regarding the Scheduling Policy that can be used to control how jobs are scheduled. I would recommend reading through the blog post as it gives good examples of how to make use of the scheduling policy feature. 
+
+We then had a chat about the job queue and how Compute Environments would be selected for scheduling if there is more than one Compute Environment associated to the job queue. In [2] it mentions the following about the ComputeEnvironmentOrder:
+
+    - The order in which compute environments are tried for job placement within a queue. Compute environments are tried in ascending order. For example, if two compute environments are associated with a job queue, the compute environment with a lower order integer value is tried for job placement first.
+
+It was then mentioned that it would be best to have a web application running in ECS rather than Batch because Batch will not restart the job should the web application fail. 
+
+In ECS, it was mentioned that to run a web application, the following would be needed:
+
+    - an ECS cluster
+    - a task definition
+    - an ECS service
+    - a load balancer that should be created prior to creating the ECS service and can be added to the ECS service when creating the ECS service. This can be used as a single point of entry for the web application. Please refer to [3] on steps on how to add a load balancer to an ECS service. 
+    - Servie autoscaling. This is also configured when creating the ECS service. I have incldued the steps in [4] for more information on this. 
+
+Lastly, I would recommend starting with the getting started guide of ECS [5] to get a better understanding of how it works and what is needed to run tasks in ECS. 
+
+I trust that the above will be useful. Feel free to reach out should there be anything that I can assist with. I will be more than happy to. 
+
+# References 
+[1] - https://aws.amazon.com/blogs/hpc/introducing-fair-share-scheduling-for-aws-batch/ 
+[2] ComputeEnvironmentOrder - https://docs.aws.amazon.com/batch/latest/APIReference/API_ComputeEnvironmentOrder.html 
+[3] - Creating an Application Load Balancer - https://docs.aws.amazon.com/AmazonECS/latest/userguide/create-application-load-balancer.html 
+[4] Step 5: Configuring your service to use Service Auto Scaling - https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-configure-auto-scaling.html 
+[5] Getting started with Amazon ECS - https://docs.aws.amazon.com/AmazonECS/latest/developerguide/getting-started.html 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Nataizya S.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9573050761&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Fri Feb 04 2022
+14:30:42 GMT+0530 (India Standard Time)
+09:01:45 AM Nataizya S: Hello, my name is Nataizya S.  I'm here to help you today.
+09:01:49 AM Nataizya S: May I ask who I am speaking to?
+09:04:15 AM Nataizya S: Hello?
+09:05:17 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Hi
+09:05:29 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Sorry for the late response
+09:05:33 AM Nataizya S: No worries
+09:05:43 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: I have few queries in AWS batch
+09:06:09 AM Nataizya S: sure
+09:06:13 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: how to run persistent web application on aws batch and application should be scaled as per the request metrics 
+09:06:47 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: also if there is any issue with the application containers should be terminated and new one should be provisioned
+09:07:07 AM Nataizya S: AWS Batch isnt the right service for this use case. you would be better with something like AWS ECS
+09:07:14 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Yes 
+09:07:16 AM Nataizya S: It can do all of that
+09:07:26 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: but I want to do it on AWS batch
+09:07:42 AM Nataizya S: It cant be done in Batch. Batch isnt designed for long running web applications
+09:08:17 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: long running is basically depends on the container CMD argument right
+09:08:37 AM Nataizya S: well yes.. 
+09:09:04 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: can we have call to discuss on this
+09:09:12 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: can we have chime meeting 
+09:09:14 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: if possible
+09:09:14 AM Nataizya S: sure.. One moment
+09:09:20 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: thanks a lot
+09:09:48 AM Nataizya S: https://chime.aws/4893387576 
+09:10:09 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: joining in
+09:10:13 AM Nataizya S: Sure
+09:16:56 AM Nataizya S: https://aws.amazon.com/blogs/hpc/introducing-fair-share-scheduling-for-aws-batch/ 
+09:37:32 AM Nataizya S: Have a good day
+
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Fri Feb 04 2022
+14:30:38 GMT+0530 (India Standard Time)
+connection got disconnected
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Dear AWS Customer,
+
+Thank you for contacting AWS Premium Support. My name is Karan and I will be assisting you today.
+I am writing a summary email as our chat got disconnected earlier today.
+
+From the case notes, I see that you have a couple of questions pertaining to AWS Batch unmanaged compute environment. You want to know how to create an unmanaged compute environment in AWS Batch. Also, you want to know the drawbacks if any in an unmanaged compute environment. Please correct me if my understanding about your issue is incomplete.
+
+Question 1 - How to create unmanaged compute environment ?
+
+Answer -
+
+To create an unmanaged compute environment using EC2 resources, please kindly follow the link in the references [1] that has detailed steps guiding you through AWS console to create and test the same.
+Please kindly note that your unmanaged compute environment doesn't have any compute resources on creation until you launch them manually. This is different than the managed compute environment.
+
+Question 2 - What are the drawbacks of an unmanaged compute environment ?
+
+In an unmanaged compute environment [2], you manage your own compute resources. You must verify that the AMI you use for your compute resources meets the Amazon ECS container instance AMI specification.
+After you created your unmanaged compute environment, you can then use the DescribeComputeEnvironments API operation to view the compute environment details.
+
+However, In a managed compute environment, AWS Batch helps you to manage the capacity and instance types of the compute resources within the environment. This is based on the compute resource specification that you define when you create the compute environment. You can choose either to use EC2 On-Demand Instances and EC2 Spot Instances. Or, you can alternatively use Fargate and Fargate Spot capacity in your managed compute environment. You can optionally set a maximum price so that Spot Instances only launch when the Spot Instance price is under a specified percentage of the On-Demand price.
+
+As such there are no drawbacks to launch an unmanaged compute environment unless you do not want to add/manage your own compute recources like EC2 instances by yourself manually and want the AWS Batch to do this job for you. If this is the scenario, only then you can opt for the managed compute environment where AWS Batch helps you manage these resources.
+
+To know more about managed and unmanaged compute environments in AWS Batch, please refer to [2].
+
+Please let me know if you have any further questions and I will be happy to assist you.
+
+A gentle note that my work shift is from Monday to Friday 8:00AM till 5:00PM CST. In case of any urgent issues or live troubleshooting, please initiate a call or chat from the AWS Support console and the next available AWS Support engineer will be able to assist you immediately. 
+
+Have a great day ahead !
+
+=======REFERENCES========
+
+[1] TITLE - Creating a compute environment - To create an unmanaged compute environment using EC2 resources. 
+	LINK - https://docs.aws.amazon.com/batch/latest/userguide/create-compute-environment.html#create-compute-environment-unmanaged-ec2 
+
+[2] TITLE - Compute environment - Unmanaged compute environments. 
+	LINK - https://docs.aws.amazon.com/batch/latest/userguide/compute_environments.html 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Karan T.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9532354771&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Tue Jan 25 2022
+20:02:58 GMT+0530 (India Standard Time)
+02:47:37 PM Karan T: Hello, my name is Karan T.  I'm here to help you today.
+02:47:42 PM Karan T: May I know your name ?
+
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Tue Jan 25 2022
+20:02:54 GMT+0530 (India Standard Time)
+connecting again
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Hello Saroja, 
+
+I hope you are doing well. 
+
+I will go ahead and resolve this issue. Please re-open or initiate a new one if you still having facing any issues.
+
+I appreciate your feedback and have a great weekend! 
+
+Please let us know if we helped resolve your issue: 
+
+ If YES, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9511586001&language=en&questionnaireId=Support-HMD-Yes 
+
+ If NO, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9511586001&language=en&questionnaireId=Support-HMD-No 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Victor K.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9511586001&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+Amazon Web Services
+
+
+Fri Jan 28 2022
+04:53:23 GMT+0530 (India Standard Time)
+
+Translate
+
+Hello,
+
+We haven't heard back from you regarding case 9511586001 for a while. For continued support regarding the same issue, you can contact us any time using the following URL:
+https://console.aws.amazon.com/support/home?#/case/?caseId=9511586001&displayId=9511586001&language=en 
+
+Please note that no action is required on your part if you wish this case to be resolved. However, if you want to close this case yourself, you could do so via the Support Center. If we haven't heard back from you within the next 72 hours we will mark the case as Resolved, although you can re-open the case any time using the link above.
+
+Best Regards,
+
+Amazon Web Services
+
+
+Amazon Web Services
+
+
+Fri Jan 21 2022
+04:32:48 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Hello Saroja, 
+
+Thank you for contacting AWS Premium Support. I am Victor and it was a pleasure assisting you on this case. 
+
+As per our chat/call you wanted to check the options on accessing resources in different account from a central place.
+
+One of the option can be AWS Single Sign On (AWS SSO). Check [1] for more information and if you need more guidance in SSO you may open a ticket with the SSO Team. 
+
+A Second option is to assume a Role in the cross account from the main account. 
+Document [2] shows all the steps to achieve the assumeRole. (in CLI and console). 
+
+In the call we went through both. The ClI, you used the command: 
+aws sts assume-role --role-arn "role" --role-session-name "session"
+
+Once done, you add the below with the values returned in the above command.
+
+set AWS_ACCESS_KEY_ID=""
+set AWS_SECRET_ACCESS_KEY=""
+set AWS_SESSION_TOKEN=""
+
+Running "aws sts get-caller-identity" You may check with role is in command.
+
+A third option that we discussed is named profiles.  This is done with users and not roles. 
+Please  Check [3] for more information. 
+
+So basically You would create a user in the other account. You would need to Check the below and to save the information needed: 
+
+Access key - Programmatic access
+Enables an access key ID and secret access key for the AWS API, CLI, SDK, and other development tools.
+
+Once you have the above information, in the aws cli , you would go to the .aws/credentials file and add the below using the access key created with the user.: 
+
+[userX]
+aws_access_key_id=ACCESSKEYID
+aws_secret_access_key=SECRETACCESSKEY
+
+Once you have the above you can run the commands and add       --profile userX  at the end to have the query ran by that profile. 
+
+Also you can change to the profile by running the below command: 
+
+export AWS_PROFILE=ProfileCreated
+
+And you can revert back by 
+
+unset AWS_PROFILE 
+or you can use: export AWS_PROFILE=default" if you save a default one as well.
+
+
+I hope the above information is helpful. I appreciate your feedback.
+Please update me if you have any follow up questions or concerns. 
+
+Have a great rest of your day!
+
+References
+============
+[1] https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html 
+[2] https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Victor K.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9511586001&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Thu Jan 20 2022
+19:53:22 GMT+0530 (India Standard Time)
+02:25:34 PM Victor Khoury: Hello, my name is Victor.  I'm here to assist you today. May I know your name please?
+02:26:06 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: Hi Victor, my name is Saroja
+02:26:30 PM Victor Khoury: Hello Saroja. How are you? 
+02:26:42 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: Doing good, how r u?
+02:27:15 PM Victor Khoury: I am doing fine as well. Thank you. 
+Please just a moment to go through the case's details.
+02:29:10 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: ok
+02:30:15 PM Victor Khoury: I understand that you want to check how to access multiple accounts by logging in to only one account. Is that correct ?
+02:30:49 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: yes
+02:32:10 PM Victor Khoury: One way to do it, is to use the AWS Single Sign On service. https://aws.amazon.com/single-sign-on/ 
+02:32:55 PM Victor Khoury: You will be able to manage multiple AWS accounts from one place. 
+02:33:34 PM Victor Khoury: Another way to access accounts: You can do cross account Assume Roles. 
+https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html 
+
+02:34:18 PM Victor Khoury: That way you can jump from one account to another
+02:34:42 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: all my accounts are under one organization but I need to login to one account from the org and should bee able to access some accounts 
+02:36:57 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: can we have a call?
+02:37:16 PM Victor Khoury: Sure. Chime call is fine? 
+02:37:20 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: yes
+02:38:40 PM Victor Khoury: 
+https://chime.aws/7745033930 
+02:58:02 PM Victor Khoury: aws sts get-caller-identity
+03:15:55 PM Victor Khoury: export AWS_ACCESS_KEY_ID=RoleAccessKeyID
+export AWS_SECRET_ACCESS_KEY=RoleSecretKey
+export AWS_SESSION_TOKEN=RoleSessionToken
+03:34:21 PM Victor Khoury: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-cli.html 
+03:35:39 PM Victor Khoury: less .aws/config
+03:44:34 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: https://cloudcustodian.io/docs/tools/c7n-org.html 
+03:46:26 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/index.html 
+03:53:35 PM Victor Khoury: unset AWS_ACCESS_KEY_ID
+unset AWS_SECRET_ACCESS_KEY
+unset AWS_SESSION_TOKEN
+
+
+AWS_165387667510_Owner/sarojani.macharla@optum.com (Role)
+
+
+Thu Jan 20 2022
+19:53:16 GMT+0530 (India Standard Time)
+Hi,
+
+I am looking to access resources from different/multiple accounts by logging in to only one account programatically.
+Example scenario is - we have a policy in place that  "every S3 bucket should configured with secure data transport policy", so I want to see all the buckets in bunch of accounts which are violating this policy.
+
+I am looking for a better approach to do this.
+
+Thank you
+Saroja
+Error: 
+IAM user or role ARN experiencing the issue: 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Hello,
+
+We haven't heard back from you regarding case 9505700751 for a while. For continued support regarding the same issue, you can contact us any time using the following URL:
+https://console.aws.amazon.com/support/home?#/case/?caseId=9505700751&displayId=9505700751&language=en 
+
+Please note that no action is required on your part if you wish this case to be resolved. However, if you want to close this case yourself, you could do so via the Support Center. If we haven't heard back from you within the next 72 hours we will mark the case as Resolved, although you can re-open the case any time using the link above.
+
+Best Regards,
+
+Amazon Web Services
+
+
+Amazon Web Services
+
+
+Mon Feb 07 2022
+08:56:38 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Hello,
+
+Please join:  
+https://chime.aws/1561924711 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Priyanka K.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9505700751&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_165387667510_Contributor/pravinks@optum.com (Role)
+
+
+Mon Feb 07 2022
+08:43:28 GMT+0530 (India Standard Time)
+Hi Team,
+
+I was trying to implement the solution and still facing the issue. Not sure of the issue and help in resolving the issue.
+
+Thanks,
+Pravin
+91-9944344850
+
+
+Amazon Web Services
+
+
+Mon Feb 07 2022
+01:37:25 GMT+0530 (India Standard Time)
+
+Translate
+Please let us know if we helped resolve your issue: 
+
+If YES, click here:
+https://console.aws.amazon.com/support/feedback?eventId=9505700751&language=en&questionnaireId=Support-HMD-Yes 
+
+If NO, click here:
+https://console.aws.amazon.com/support/feedback?eventId=9505700751&language=en&questionnaireId=Support-HMD-No 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Hi Pravin,
+
+This is Josh again from AWS Support. It was a pleasure working with you earlier! I’m happy we were able to explain and resolve the strange behavior with EC2 Image Builder pipeline “ImageBuilderPipelineLinuxMSTR”. I am going to quickly summarize our conversation below for your records. 
+
+You have a third party security service that monitors your AWS accounts to alert you to security concerns. This tool has been alerting you that there are unencrypted EBS volumes being created in this account, but not terminated, and your suspicion is the image builder pipeline. We confirmed this behavior over screenshare. Your image recipe stated that there should be one encrypted io1 EBS volume attached to this instance as /dev/xvda, but the source AMI used in the recipe is configured to create 3 EBS volumes, two of which are unencrypted. 
+
+Essentially, what happened is your pipeline would run, the /dev/xvda EBS volume would be created correctly per the recipe settings, but because of the AMI in use two other EBS volumes were being created (xvdb and xvdc), and they were set to NOT delete on termination. This is what was causing the Image Builder test instances to create extra EBS volumes and not delete them, leading to the alerts you received. We resolved this issue by creating a new version of the recipe, and this time specifying storage volume configuration for all three volumes included in the AMI (we were sure to enable them to delete on termination). After modifying the recipe, we ran the pipeline, and confirmed the EBS volumes were now being encrypted as expected, and being deleted when no longer needed. This should clear up the emails your organization was receiving. 
+
+I’m happy you found my input helpful! As discussed, I will be closing this support case now. Please feel free to reach out if you have any further questions regarding this issue! 
+
+
+References:
+[1] https://docs.aws.amazon.com/imagebuilder/latest/userguide/troubleshooting.html#troubleshooting-pipelines 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Josh T.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9480795851&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Thu Jan 13 2022
+21:55:33 GMT+0530 (India Standard Time)
+04:35:58 PM Josh T.: Hello, my name is Josh.  I'm here to help you today.
+04:36:07 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: Hi Josh,
+04:36:43 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: I had created a ec2 image builder pipeline and notice when EC2 instance is launching I see additional volumes getting created unencrypted
+04:37:35 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: Need to understand if it can be eliminated. Please do let me know if we can have chime call to share my screen and explain
+04:38:42 PM Josh T.: Hi! I'll be happy to join a call if needed, but I need to review some information first. Can you please confirm the name of the pipeline? docker-1?
+04:39:05 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: no not that.
+04:39:15 PM Josh T.: Which pipeline?
+04:39:16 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: ImageBuilderPipelineLinuxMSTR
+04:39:21 PM Josh T.: Ok got it, thank you 
+04:39:32 PM Josh T.: One moment please
+04:45:38 PM Josh T.: When troubleshooting Image Builder pipelines, you can find more information about the failure from the SSM console. Image Builder uses SSM to orchestrate build actions, so each image build has a "Systems Manager Execution ID" associated with it https://docs.aws.amazon.com/imagebuilder/latest/userguide/troubleshooting.html#troubleshooting-pipelines 
+04:46:04 PM Josh T.: I am investigating your account's failed SSM automations and will be returning info shortly. You can also view this information direction from the SSM console 
+04:46:27 PM Josh T.: Under the "Automation" section 
+04:46:32 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: one moment.. 
+04:46:39 PM Josh T.: Sure. I am gathering info as well
+04:47:12 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: before that I wanted to understand why I see there are additional volumes than root volume getting spin when EC2 instance is getting created
+04:47:23 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: and snapshots are taken without encryption
+04:49:44 PM Josh T.: In the recipe for this image, I only see one storage volume. It is configured to use 1 encrypted io1 volume. You are seeing more volumes than this? I think it may be a good idea to run the pipeline again. It seems this pipeline has not been executed for a while 
+04:50:07 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: yes the pipeline is start now
+04:50:20 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: I see in snapshots there are multiple taken
+04:50:24 PM Josh T.: Ok great. The SSM Execution log will give us much more detail 
+04:50:47 PM Josh T.: Ok, I'll be monitoring this most recent pipeline execution 
+04:55:23 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: i hope you would have seen i had encrypted the one root volume. however, I see multiple volumes been backed up which are unencrypted too
+04:57:09 PM Josh T.: Hmm ok. I definitely see the 100GB encrypted io1 volume, but I see no other reasons so far (in this pipeline) why extra volumes would be added, or snapshots be created. Especially unencrypted. The most recent execution of the pipeline should give us an SSM Execution ID to review for more info 
+04:57:29 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: ok sure
+04:57:44 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: Execution ID: 50e1a27e-c375-4016-8796-40b4d2efbf50
+04:57:52 PM Josh T.: Awesome! Checking now 
+04:58:10 PM Josh T.: I see it's building!
+04:58:15 PM Josh T.: Now we wait for the steps to complete
+04:58:33 PM Josh T.: If it hangs at any point, the SSM execution ID should provide more info 
+05:00:10 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: I see in ec2 instance which got created now.. there is root device and block device
+05:00:32 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: why comes the block device to the ec2 instance which was spin by ec2 image builder
+05:01:31 PM Josh T.: When you run an image builder pipeline, the service spins up EC2 instances on your behalf. I'm assuming this is the EC2 instance you noticed? This instance will be terminated once the build is complete
+05:01:34 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: additional two volumes in block device
+05:01:54 PM Josh T.: Can you share the EC2 instance ID please
+05:02:13 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: i-00723fa562451c9bc
+05:02:20 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: yes instance get terminated
+05:02:46 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: however some additional volumes it is creating is not deleting on termination as it is set as false
+05:02:55 PM Josh T.: Oh!
+05:03:05 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: and snapshots of those volumes are taken without encryption and cause violation
+05:03:35 PM Josh T.: Ok interesting. I'm going to review your pipeline configuration again. One moment please
+05:05:55 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: if it is fine we can have chime to share my screen and test it
+05:06:04 PM Josh T.: Sure I will set that up now 
+05:07:06 PM Josh T.: Please join here: 
+https://chime.aws/2612695921 
+05:31:38 PM Josh T.: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html 
+
+
+
+AWS_165387667510_Contributor/pravinks@optum.com (Role)
+
+
+Thu Jan 13 2022
+21:55:17 GMT+0530 (India Standard Time)
+Hi team,
+
+EC2 instance volumes unencrypted and causing violation when Image builder is spinning the instance.
+
+Thanks,
+Pravin
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Hello Pravin.
+
+Hope you are fine today,
+
+It was my pleasure speaking with you regarding your query about adding tags to the baked output AMI. This email is a summary for our conversation.
+
+I understood that you would like to add a tag to the final out AMI with the name of the source AMI which is used in the pipeline, since the pipeline is dynamically changed with each run.
+
+I have suggested to use the "Output AMI tags - optional" under the [Distribution Settings] to achieve that.
+
+You were able to test that, and the AMI output was now showing the new tags.
+
+I have suggested to use the SSM Automation also to achieve the same outcome, since the Automation is also providing more granular actions and flexible ways to achieve your use case.
+
+Please find the following links for more information regarding the SSM Automation service:
+
+[+] https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html 
+
+[+] https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-actions.html 
+
+I trust these information will help you, and as agreed I will be marking the case as closed for now, However please feel free to reach us in case if you needed any further help or details.
+
+Thanks and I wish you a great day.
+
+Please let us know if we helped resolve your issue: 
+
+ If YES, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9475453581&language=en&questionnaireId=Support-HMD-Yes 
+
+ If NO, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9475453581&language=en&questionnaireId=Support-HMD-No 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Ahmed Y.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9475453581&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_165387667510_Contributor/pravinks@optum.com (Role)
+
+
+Wed Jan 12 2022
+18:32:52 GMT+0530 (India Standard Time)
+Hi Team,
+
+Need help in including Image builder to include the dynamic output tags
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Dear surendar,
+
+Warm greetings from AWS premium support.
+
+Lavanya again! Thank you for your time on chat today! It was a pleasure talking with you and I appreciate the opportunity to assist you with this case today.
+
+Please find below a quick summary of our conversation:
+
+From the case description, I understand that you faced issue with the WAF reporting metric suggesting your WebACL rules has not showing any blocked requests on the WAF dashboard. Further, you were not able to view the graph in the cloudwatch console too.
+
+I would like to inform you that recently, we experienced issues with AWS WAF real-time metrics for customers using WAFv2 APIs with Amazon CloudFront. During this period, real-time metrics were submitted to CloudWatch using WebACL ARN instead of WebACL name, so customers may not have seen WAF metrics in their CloudWatch graphs. Consequently, CloudWatch alarms that customers may have on this metric might not have worked correctly. 
+
+Please note, our internal team working on this and we cannot provide any ETA for this.Having said that, there was no impact to WAF mitigation or CloudFront servers inspecting and responding to customer requests during this time. There was also no impact to WAF full logs.
+
+I apologize for the inconvenience due to this issue. Please feel free to write back to me if you have any further query or concerns regarding this. I will be happy to assist you. 
+
+Please Remember we are here for you.
+
+Stay safe and Have a lovely day!
+
+Please let us know if we helped resolve your issue: 
+
+ If YES, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9470141651&language=en&questionnaireId=Support-HMD-Yes 
+
+ If NO, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9470141651&language=en&questionnaireId=Support-HMD-No 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+lavanya n.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9470141651&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Tue Jan 11 2022
+15:54:05 GMT+0530 (India Standard Time)
+we are facing issue with metrics in AWS WAFV2 dashboard . 
+
+
+Attachments
+all_metics.JPG
+blocked_metrics.JPG
+
+AWS_P0001489@optum.com
+
+
+Tue Jan 11 2022
+15:36:49 GMT+0530 (India Standard Time)
+10:07:14 AM Lavanya: Hello, my name is Lavanya.  I'm here to help you today.
+10:07:50 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Hi Lavanya, My name is surendar
+10:08:00 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: I have query on AWS WAF monitoring dashboard
+10:08:24 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: it is showing allowed request logs but it is not showing blocked requests
+10:08:24 AM Lavanya: Hi surendar, nice to meet you!
+10:08:39 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: when i select "all metric" in dashboard
+10:08:44 AM Lavanya: ok
+10:08:51 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: what could be the reason 
+10:11:54 AM Lavanya: yes it may happens when there are no requests blocked by the waf.
+10:12:02 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: it is blocked
+10:12:08 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: can we have chime session 
+10:12:12 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: i can show 
+10:12:13 AM Lavanya: sure
+10:12:44 AM Lavanya: Click to join the meeting: https://chime.aws/3018153644 
+Meeting ID: 3018 15 3644
+10:12:47 AM Lavanya: please join
+10:24:51 AM Lavanya: Bye surendar!
+10:25:21 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Hi
+10:25:28 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Please send an email now
+10:25:35 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: I am waiting for it
+10:25:38 AM Lavanya: sure!
+10:26:00 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Thanks a lot... have a good day
+10:26:05 AM Lavanya: bye for now.
+
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Tue Jan 11 2022
+15:36:41 GMT+0530 (India Standard Time)
+connecting again
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+Hi Surendar,
+
+Thank you for your time over the call. I appreciate you being patient and responsive throughout.
+
+We discussed that you wanted to deploy a WAF in front of your Load Balancer and your CloudFront distribution. I mentioned that a WAF is a a layer 7 firewall offering of AWS, an entity that helps protect your web applications or APIs against common web exploits. The internal architecture for the same is managed by AWS and you simply need to associate your WAF with a resource that needs protection.
+
+Your architecture will be as follows: 
+
+Clients ~~~> WAF ~~~> ALB ~~~> Backend targets
+
+There is no additional software to deploy, DNS configuration, SSL/TLS certificate to manage, or need for a reverse proxy setup. We also discussed that, since a WAF is a regional service, we need to create a different Web ACL to be used with your Application Load Balancer and your CloudFront distribution.
+
+As discussed, I will be closing this case. In case you still face any concerns, please feel free to raise another support case and we will be available to assist you with the same.
+
+Have a great day!
+
+Please let us know if we helped resolve your issue: 
+
+ If YES, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9464660331&language=en&questionnaireId=Support-HMD-Yes 
+
+ If NO, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9464660331&language=en&questionnaireId=Support-HMD-No 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Yashovardhan C.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9464660331&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Mon Jan 10 2022
+13:04:06 GMT+0530 (India Standard Time)
+07:39:16 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Hi My name is surendar
+07:39:29 AM Yashovardhan Chaturvedi: Hello, my name is Yash Chaturvedi.  I'm here to help you today.
+07:39:34 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: I have one query about the workflow of Webacl
+07:39:56 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: If I would add the load balancer in webacl protected resouces
+07:40:14 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: how it is blocking or allowing the request as per my conditions
+07:40:42 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: because i have pointed my URL (abc.om ) to the load balancer hostname.
+07:40:52 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: how the traffic flow is happening
+07:41:33 AM Yashovardhan Chaturvedi: So you want to know how the traffic flow will happen in your case and how the WAF will allow or block a request correct?
+07:42:30 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: right
+07:42:39 AM Yashovardhan Chaturvedi: Okay let me tell you
+07:42:52 AM Yashovardhan Chaturvedi: So the traffic flow/architecture will be as follows:
+07:43:52 AM Yashovardhan Chaturvedi: Website (abc.com) ---> WAF ---> Application Load Balancer ---> backend targets
+07:44:34 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: but my traffic is how does it know the webacl is placed in between application load balancer
+07:44:54 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: because i have pointed the  URL to the hostname directly from my domain provider
+07:45:10 AM Yashovardhan Chaturvedi: We will add some rules inside the WAF, as per your use case and the type of requests that you want to be blocked. Then the WAF will inspect all the requests coming for your ALB and block it if it matches the rules that we had set
+07:45:32 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: can we have chime call
+07:45:41 AM Yashovardhan Chaturvedi: Sure, let me generate a link for you
+07:45:47 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: THANKS 
+07:46:45 AM Yashovardhan Chaturvedi: Please join using this link: https://chime.aws/6850350739 
+
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Mon Jan 10 2022
+13:03:54 GMT+0530 (India Standard Time)
+blocking request using WAF
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Dear Customer,
+
+Good day to you.
+
+Thank you for contacting AWS premium support. I am Mayank from RDS team and I will be assisting you on this case.
+
+==========
+Description
+===========
+
+From the case notes I understand that, you want to restore backup on existing database. Please correct if the understanding is wrong.
+
+=========
+Analysis
+=========
+
+Regretfully, I would like to inform you that currently there is no such option to restore database from DB snapshot to an existing DB instance.  Please refer, https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_RestoreFromSnapshot.html 
+
+Please note, Amazon RDS creates a storage volume snapshot of your DB instance, backing up the entire DB instance and not just individual databases. You can create a new DB instance by restoring from a DB snapshot. You provide the name of the DB snapshot to restore from, and then provide a name for the new DB instance that is created from the restore.
+
+========
+Solution
+========
+
+Moving further, I understand that below mentioned points might be you requirement for which you are trying to restore and existing DB instance from a DB snapshot. Please let me know your requirement, if below mentioned points doesn't meet to your requirement. I will be happy to assist you.
+
+1. After creating new instance your endpoint name (DB Identifier) is getting changed:
+2. Requirement to import some specific tables 
+
+1. After creating new instance your endpoint name (DB Identifier) is getting changed : I understand that there might be possibility that your current DB is integrated/configured with different applications and you are using the Endpoint name (DB identifier) for accessing due to which you don't want to change your current DB instance name.
+
+If this is the case then I would like to suggest you to rename your current DB instance and restore the new DB instance from a DB snapshot with the old DB identifier (old Db name). By following this approach your current integrated endpoint name (DB identifier) will not get changed.
+
+2. Requirement to import database to an existing instance : I would like to inform you if you have requirement to import database to an existing instance then you can create a new DB instance from the DB snapshot and then you can take an export of the database from new created DB instance and then import it to the existing one using MySQL dump utility.
+
+--> For restoring a DB instance from a DB snapshot
+
+		To restore a DB instance from a DB snapshot
+
+		1. Sign in to the AWS Management Console and open the Amazon RDS console at https://console.aws.amazon.com/rds/ 
+		2. In the navigation pane, choose Snapshots.
+		3. Choose the DB snapshot that you want to restore from.
+		4. For Actions, choose Restore snapshot.
+		5. On the Restore snapshot page, for DB instance identifier, enter the name for your restored DB instance.
+		6. Choose Restore DB instance
+
+Take mysqldump of new RDS instance and restore this dump to old RDS instance: 
+
+mysqldump: https://dev.mysql.com/doc/mysql-backup-excerpt/5.7/en/mysqldump-sql-format.html  
+Restore: https://dev.mysql.com/doc/mysql-backup-excerpt/5.7/en/reloading-sql-format-dumps.html 
+
+Note: 
+1. It is highly recommended to test above suggestion in test environment before applying the same to production. 
+2. It is highly recommended to perform this activity in non business hours.
+
+
+I sincerely hope that the above information I have provided has been helpful to you. If you have any further questions on the above, or if you'd like me to clarify anything I've shared, please don't hesitate to reach back out to me and I will be happy to assist further as best I can. 
+
+Thank you, please always be in good health and have a blessed day ahead.
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Mayank S.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9454296821&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Fri Jan 07 2022
+15:05:36 GMT+0530 (India Standard Time)
+connection lost
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Fri Jan 07 2022
+15:02:49 GMT+0530 (India Standard Time)
+How to restore backup on existing database
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Hello,
+
+Warm Greetings from AWS Premium Support. This is Jay from the CloudWatch team and I will be assisting you with the case today.
+
+From your case notes, I was able to understand that you have derived custom metrics by creation metric filters on log groups and would like to add "InstanceId" as dimension to these metrics. Please feel free to correct me if I have misunderstood anything here.
+
++To begin I would like inform you that you can create dimensions for metric filter if filter pattern provided is in JSON log events or space-delimited log events only [1][2]. Unfortunately, we cannot add custom dimensions(e.g. InstanceId) while configuring the filters at the moment.
+
++Having said that I would like to inform you that we already have an existing feature request to support custom dimensions with metric filters. I will perform my due diligence in ensuring that your case is used as supporting evidence to escalate this feature. Unfortunately I won’t be able to provide you with an ETA on when this feature might be released as I have no visibility over that process. However, all of our new announcements and releases will be posted on https://aws.amazon.com/blogs/aws/  and http://aws.amazon.com/new .
+
+Workaround:
+============
++As a possible workaround, you can look to create separate log group for each EC2 Instance and then add the "InstanceId" value as prefix to log group name. For e.g. i-ab372239292373_messages_logs
+
++I can see that you have already tried to implement this workaround by naming your log groups and metric starting with "InstanceId" prefix as show below:
+
+-------------------
+i-04b761fe3a6c9e800_/dev/syslog/secure  - i-04b761fe3a6c9e800-/dev/syslog/secure-count (Metric name)
+i-04b761fe3a6c9e800_/dev/syslog/messages - i-04b761fe3a6c9e800-/dev/syslog/messages-count) (Metric name)
+-------------------
+
+
+I hope this information was of value to you. In case you have any queries or concerns, please feel free to let me know and I would be happy to assist you further.
+
+We wish you a great day ahead.
+
+Have great rest of your day!
+
+References:
+============
+[1] https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/FilterAndPatternSyntax.html#logs-metric-filters-dimensions 
+
+[2] Example: Extract fields from an Apache log and assign dimensions  - https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/ExtractBytesExample.html 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Jay J.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9383976601&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_165387667510_Contributor/ngunasek@optum.com (Role)
+
+
+Wed Dec 22 2021
+13:55:38 GMT+0530 (India Standard Time)
+We've created Log metric for analysing EC2 instance logs and pushing the logs from EC2 through Cloudwatch Agent. But, since the same log will be available in multiple instance we would need to have a dimension available for the Metric using the Instance ID to distinguish it.
+Namespace: CWAgent
+Metric Name: /dev/syslog/messages-count
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
+
+Tue Jan 11 2022
+15:33:51 GMT+0530 (India Standard Time)
+Not showing blocked requests in monitoring
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
