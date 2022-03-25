@@ -9958,4 +9958,569 @@ Not showing blocked requests in monitoring
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+Hi,
+
+Thanks for contacting AWS Support, my name is Andrew.
+
+I understand that you wanted to confirm what order Components run in because you wanted to have updateOS run last.
+
+Please note that Test Components run after Build Components. However, Test Components are not able to make any changes to the final Image produced by EC2 Image Builder; this may not apply to your situation, but I wanted to clarify this because it may be something you would like to consider.
+
+Regarding the order in which EC2 Image Builder Components run, the Components run in the order specified (top to bottom), this is the case when you define them in the web-console GUI, and when you define them using JSON through the AWS CLI.
+
+So, if you had the following Components defined:
+
+-Build Component 1
+-Build Component two
+-Build Component 3
+-Test Component one
+-Test Component 2
+
+They would run in the order they appear (top to bottom).
+
+
+If you had:
+
+-Test Component one
+-Test Component 2
+-Build Component 1
+-Build Component two
+-Build Component 3
+
+The three Build Components would run first (top to bottom), then the two Test Components would run (top to bottom).
+
+
+Please don't hesitate to write back if you have any additional questions.
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Andrew T.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9363654871&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Fri Dec 17 2021
+19:27:44 GMT+0530 (India Standard Time)
+I am trying to connect but it took more time and not connecting to support team. 
+
+kindly provide the clarification on the below query
+
+what is the order of executing the component in image builder pipeline. 
+
+we wanted to run the updateOS module at last step, how to do this ?
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Fri Dec 17 2021
+18:32:49 GMT+0530 (India Standard Time)
+i do have multiple component is recipe, in that which component will run first. what order image pipeline will execute the component and inbuilt modules
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+64. 
+Hello Surendar,
+
+My name is Hrishikesh. 
+Thank you for your time on call. It was pleasure working with you. 
+Please treat this email as a summary of the conversation we had.
+
+Issue:
+Wanted to blacklist ip addresses in WAF and test some rules
+
+Solution:
+While on call we added you own ip address in ip set and set rule action to block. 
+you also set custom message and error code 420 and tested same in developer tools
+
+I hope you find the information above useful. Should you have any additional questions, thoughts, concerns or queries please don't hesitate to ask. I will be happy to assist!
+Have a great Day!
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Hrishikesh Diwakar L.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9362767531&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Fri Dec 17 2021
+13:55:39 GMT+0530 (India Standard Time)
+08:30:36 AM Hrishikesh Diwakar: Hello, my name is Hrishikesh .  I'm here to help you today.
+08:30:56 AM Hrishikesh Diwakar: may I know your name please?
+08:33:04 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: My name is surendar
+08:33:36 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: i wanted to know how to blacklist the IP address in WAF
+08:34:22 AM Hrishikesh Diwakar: Hello Surendar , how are you?
+08:34:49 AM Hrishikesh Diwakar: to blacklist ip address in WAF..create an ip set..add in a rule ..rule action keep block
+08:35:10 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: can we have session on how to do it
+08:35:36 AM Hrishikesh Diwakar: ok ,screenshare?
+08:35:41 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: yes
+08:36:25 AM Hrishikesh Diwakar: https://screenshare.aws/?ak=9dda4449a137a5459156505e09eab258 
+08:38:24 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: is it possible to connect in chime
+08:39:09 AM Hrishikesh Diwakar: ok
+08:39:34 AM Hrishikesh Diwakar: https://chime.aws/7681574669 
+Meeting ID: 7681 57 4669
+U.S. Toll: +1 206-462-5569
+Meeting PIN: 7681 57 4669
+U.S. Toll-free: +1 855-552-4463
+International: https://chime.aws/dialinnumbers/ 
+
+08:40:50 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: joinin in
+
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Fri Dec 17 2021
+13:55:10 GMT+0530 (India Standard Time)
+couldnt connect
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Fri Dec 17 2021
+13:54:56 GMT+0530 (India Standard Time)
+could not connect
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Fri Dec 17 2021
+13:12:09 GMT+0530 (India Standard Time)
+how to add multiple bad IPs in list
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+65.
+Chat: User data not running successfully on recently created EC2of type t3.small
+
+Hello Saroja,
+
+Thank you for contacting AWS today. I am sending this email as a quick summary of the case we have worked on together today.
+
+Basically the issue was related to the UserData that you were attempting to execute on your instances, same source AMI, same instance type, same infrastructure, same AWS region, etc. 
+
+However at the end of the day you received an error related to the JVM version that Tomcat was getting, as it was not the one you expected even after installing that properly from the User Data as below:
+
+#!/bin/bash
+yum -y update --security
+yum -y update kernel
+yum install ruby -y
+yum install httpd -y
+yum install java-1.8.0-openjdk-src.x86_64 -y
+yum install tomcat -y
+
+Therefore, after various attempts from my end and your end, the solution was related to the installation of java, it happened to work by executing the following command: (no src)
+
+yum install java-1.8.0-openjdk.x86_64 -y
+
+
+We came to the conclusion that it could be that since SRC is usually related to source installation, there might have be a recent change at the repositories which is not working anymore with Tomcat. Furthermore, by installing Java as non SRC this could be the most suitable option as it would only contain the binaries needed for Tomcat to work properly with your applications.
+
+
+As agreed, I am resolving this case.
+
+Thank You
+
+Please let us know if we helped resolve your issue: 
+
+ If YES, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9359340081&language=en&questionnaireId=Support-HMD-Yes 
+
+ If NO, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9359340081&language=en&questionnaireId=Support-HMD-No 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Oscar R.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9359340081&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Thu Dec 16 2021
+22:35:27 GMT+0530 (India Standard Time)
+05:06:36 PM Pukar: Hello, my name is Pukar.  I'm here to help you today.
+05:06:45 PM Pukar: May I have your name as I review the case please/ 
+05:06:47 PM Pukar: ? 
+05:08:04 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: Hi, my name is Saroja
+05:08:20 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: Oscar R was assisting me
+05:08:22 PM Pukar: Hello Saroja, seems like you were working with engineer Oscar,
+05:08:33 PM Pukar: Let me try and transfer it back to him.
+05:08:35 PM Pukar: Just a moment please.
+05:08:50 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: so I lost the connection with chat  when I was working witth him
+05:09:02 PM Pukar: Understood. 
+05:09:20 PM Pukar: Let me try and transfer. Just a moment please.
+05:09:25 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: ok
+05:10:27 PM Oscar R: Hello Saroja
+05:10:31 PM Oscar R: We are back
+05:10:33 PM Oscar R: sorry for that
+05:10:42 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: np :)
+05:11:01 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: can you send me the chime link please?
+05:11:48 PM Oscar R: We can try sure but I won't be really able to see your screen if the resources belong to another account
+05:11:54 PM Oscar R: if you agree on that I can share it
+05:12:33 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: alll the accounts fall under same org
+05:12:46 PM Oscar R: That's a fact
+05:12:51 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: ok
+05:13:08 PM Oscar R: however, as per security policies unless you have signed off a crossaccount support
+05:13:30 PM Oscar R: you need to open a case from the Account of the resources you need to
+05:13:46 PM Oscar R: Anyway, I've been trying to replicate this issue
+05:14:31 PM Oscar R: and I could successfully do it. 
+05:14:39 PM Oscar R: basically what I have performed is:
+#!/bin/bash
+yum -y update --security
+yum -y update kernel
+yum install ruby -y
+yum install httpd -y
+yum install java-1.8.0-openjdk-src.x86_64 -y
+yum install tomcat -y
+
+output : { all : '| tee -a /var/log/cloud-init-output.log' }
+05:14:43 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: working server: Server version: Apache Tomcat/7.0.76
+Server built:   Jun 22 2020 23:34:41 UTC
+Server number:  7.0.76.0
+OS Name:        Linux
+OS Version:     4.14.225-169.362.amzn2.x86_64
+Architecture:   amd64
+JVM Version:    1.8.0_312-b07
+JVM Vendor:     Red Hat, Inc.
+05:15:46 PM Oscar R: After executing the user data I see that openjdk was installed:
+# rpm -qa |grep openjdk
+java-1.8.0-openjdk-headless-1.8.0.312.b07-1.amzn2.0.1.x86_64
+java-1.8.0-openjdk-src-1.8.0.312.b07-1.amzn2.0.1.x86_64
+05:16:14 PM Oscar R: But I still don't get what could mean:
+- keytool error: java.lang.Exception: The -keyalg option must be specified."
+05:16:23 PM Oscar R: I don't see it in my logs
+05:17:58 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: keytool -noprompt -keystore .keystore.jks -genkey -alias ${svc_user}_client -storepass "${truststore_password}"  -keypass "${truststore_password}"  \
+    -dname "CN=Unknown, OU=Unknown, O=Unknown, L=Unknown, S=Unknown, C=US"
+
+05:18:28 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: can you run above after installss
+05:19:02 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: can you check java version after the install commands?
+05:19:21 PM Oscar R: Oh ok so the error is related to that command
+05:19:22 PM Oscar R: interesting
+05:19:43 PM Oscar R: I'm sorry but I'm not familiar with that. Thank you for providing it. 
+05:19:54 PM Oscar R: can you please provide a few more details
+05:20:00 PM Oscar R: about what that command does?
+05:21:07 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: can we talk...I will not share any other account details...
+05:21:35 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: it will be easy I feel
+05:21:51 PM Oscar R: Sure no worries
+05:21:57 PM Oscar R: let me give you the link
+05:22:11 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: ok
+05:23:43 PM Oscar R: https://chime.aws/1664492212 
+
+
+
+AWS_165387667510_Owner/sarojani.macharla@optum.com (Role)
+
+
+Thu Dec 16 2021
+22:35:22 GMT+0530 (India Standard Time)
+lost chat connection 
+
+
+AWS_P0001489@optum.com
+
+
+Thu Dec 16 2021
+21:25:53 GMT+0530 (India Standard Time)
+04:07:36 PM Oscar R: Hello, my name is Oscar R.  I'm here to help you today.
+04:07:38 PM Oscar R: GetComponent, exceeded maximum number of attempts, 3
+04:07:52 PM Oscar R: Can I have your name while I review the case please?
+04:08:27 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: Hi Oscar, my name is Saroja
+04:08:55 PM Oscar R: Thank You Saroja!
+How are you today? :)
+Please bear with me, I need a couple of minutes to check your information.
+04:09:29 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: sure
+04:13:38 PM Oscar R: Thank you, sorry for the delay. 
+I see you recently migrated applications then you recreated Ec2 instances and they are now giving some errors while running the same user data correct?
+04:13:52 PM Oscar R: can you please provide me the Instance ID of one of these new instances?
+04:13:53 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: yes
+04:17:40 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: The instance is on another account, I don't have permission on that account so creating ticket in this account
+04:18:21 PM Oscar R: Oh I see, sure that'd be necessary in order to be able to see the resources on that other account. 
+04:18:49 PM Oscar R: please let me know the new case ID, I can actually work on that over this same chat.
+04:19:03 PM Oscar R: So you don't have to open a new one, if you want.
+04:19:24 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: you want to me to create new case?
+04:20:13 PM Oscar R: Yes, this case was created on AWS account 165387667510
+04:20:23 PM Oscar R: so if the instances belong to another acount
+04:20:26 PM Oscar R: *account
+04:20:36 PM Oscar R: you need to create another case on that specific account. 
+04:21:26 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: I dpn't have permissions on that account
+04:22:02 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: if you can send me the chime link , i can show you the issue if you want
+04:22:30 PM Oscar R: Since the resources belong to another account that is not possible for me to do as per our privacy policies. 
+04:22:34 PM Oscar R: but you can share with me
+04:22:38 PM Oscar R: at least some data
+04:22:39 PM Oscar R: such as 
+04:22:47 PM Oscar R: what is the OS version you are using
+04:22:54 PM Oscar R: and you can even share with me via email
+04:23:00 PM Oscar R: the user data you are using
+04:23:33 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: Linux
+04:23:35 PM Oscar R: and the EC2 instance type
+04:23:48 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: t3.small
+04:24:25 PM Oscar R: is it Amazon Linux 2?
+04:27:00 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: yes
+04:28:45 PM Oscar R: Ok, So I am trying to look up in my documentation about the error you are receiving
+04:29:10 PM Oscar R: but it would be helpful if you could share with me the user data. 
+04:29:38 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: I just now checked yum update -y
+yum -y update --security
+yum -y update kernel
+yum install ruby -y
+yum install httpd -y
+yum install java-1.8.0-openjdk-src.x86_64 -y
+yum install tomcat -y
+04:31:02 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: with above installations I see working instance has openjdk version "1.8.0_312" and latest one has openjdk version "17.0.1" 2021-10-19 LTS and latest instance has 
+04:34:55 PM Oscar R: ok, thanks for that. it seems that you. are attempting to install the specific version:
+yum install java-1.8.0-openjdk-src.x86_64 -y
+Is the working instance based on the same Amazon Linux 2 version?
+04:34:59 PM Oscar R: or same AMI
+04:35:00 PM Oscar R: ?
+04:35:33 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: yes
+04:35:52 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: let me double check
+04:36:02 PM Oscar R: sure
+04:37:09 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: yes, both has same AMI
+04:38:43 PM Oscar R: ok, please let me try to take a look at this.
+04:38:48 PM Oscar R: please bear with me
+04:39:05 PM Oscar R: it might take me  some minutes but I'll keep you updated. 
+04:39:47 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: no problem
+04:59:07 PM assumed-role/AWS_165387667510_Owner/sarojani.macharla@optum.com: Can you create chime link?
+
+
+
+AWS_165387667510_Owner/sarojani.macharla@optum.com (Role)
+
+
+Thu Dec 16 2021
+21:25:50 GMT+0530 (India Standard Time)
+Delont'e has left the conversation.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+66. Chat: Need Remediation for findings
+
+Hello,
+
+We haven't heard back from you regarding case 9354023611 for a while. For continued support regarding the same issue, you can contact us any time using the following URL:
+https://console.aws.amazon.com/support/home?#/case/?caseId=9354023611&displayId=9354023611&language=en 
+
+Please note that no action is required on your part if you wish this case to be resolved. However, if you want to close this case yourself, you could do so via the Support Center. If we haven't heard back from you within the next 168 hours we will mark the case as Resolved, although you can re-open the case any time using the link above.
+
+Best Regards,
+
+Amazon Web Services
+
+
+Amazon Web Services
+
+
+Wed Dec 15 2021
+19:18:43 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Hello Surendar,
+
+It was a pleasure working with you today.
+
+You reached out to us today because inspector had revealed CVE-2021-3640, CVE-2021-4002 - kernel, CVE-2021-3772 vulnerabilities in your EC2 instance i-0c0dd3e4be4a6de7d located in the us-east-1 region and wanted to remediate it. As i could not find the vulnerability listed in the same region found here [1] I looked up Amazon Linux Security Center [2] for the same vulnerabilities and found the remediation. 
+
+To remediate all three vulnerabilities you simply have to run:
+
+sudo yum update kernel
+
+This will update your kernel version and should patch the listed vulnerabilities.
+
+I hope this information serve useful, please feel free to reach back out if you have any more questions and I will be more than happy to assist you.
+
+Have a great rest of the day!
+
+
+References:
+
+1. Common vulnerabilities and exposures - https://docs.aws.amazon.com/inspector/latest/userguide/inspector_cves.html 
+
+2. https://alas.aws.amazon.com/AL2/ALAS-2021-1727.html 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Nagendra Prasad P.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9354023611&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Wed Dec 15 2021
+18:23:37 GMT+0530 (India Standard Time)
+01:15:59 PM Nagendra: Hello, my name is Nagendra.  I'm here to help you today.
+01:16:35 PM Nagendra: May I know your name please?
+01:17:08 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: hi
+01:17:14 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: my name is surendar
+01:17:35 PM Nagendra: How are you doing today surendar
+01:19:46 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: I am fine thanks
+01:20:10 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: can you please let me know the remediation for inspector finding mentioned in the case
+01:21:54 PM Nagendra: I took at look at the instance, seems like it is in the us-east-1 region.
+The CVE's that inspector can detect in that region can be found in this link - https://docs.aws.amazon.com/inspector/latest/userguide/inspector_cves.html 
+01:22:42 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: remediation needed 
+01:24:14 PM Nagendra: While the list is massive I was able to comb through it and I did not find CVE-2021-3640.
+01:24:34 PM Nagendra: Is this a finding generated by inspector classic?
+01:24:56 PM Nagendra: I understand you require remediation.
+01:25:14 PM Nagendra: I would need to locate the CVE first, in order to proceed with the remediation
+01:25:14 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: i m not sure
+01:25:22 PM Nagendra: No worries
+01:25:28 PM Nagendra: Allow me a moment please.
+01:25:33 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: ok
+01:26:00 PM Nagendra: can we get on a quick screenshare session?
+01:28:09 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: can we do it by 7.30 PM IST
+01:28:16 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: that means in next 30 Min
+01:28:43 PM Nagendra: Sure.
+01:28:55 PM Nagendra: initiate another chat when you are available
+01:29:05 PM Nagendra: And we can pick it up from there.
+01:30:20 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: okay done
+01:30:32 PM Nagendra: See you then :)
+01:31:06 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: thanks
+01:31:17 PM Nagendra: You're welcome
+
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Wed Dec 15 2021
+18:23:28 GMT+0530 (India Standard Time)
+connecting again
+
+>>>>>>>>>>>>>>>>>>>>>>>>>
+
+67. 
 
