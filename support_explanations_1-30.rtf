@@ -10522,5 +10522,1838 @@ connecting again
 
 >>>>>>>>>>>>>>>>>>>>>>>>>
 
-67. 
+67. Hi Team,
+
+Below is the summary of the call we had.
+
+1. Impacted or not?
+>>> as described in [1]. The issue discussed in CVE-2021-44228 is relevant to Apache log4j- core versions between 2.0 and 2.14.1 when processing inputs from untrusted sources. EMR clusters launched with EMR 5 releases up to 5.34 and EMR 6 releases up to EMR 6.5 include open source frameworks such as Apache Hive, Flink, HUDI, Presto, and Trino, which use these versions of Apache Log4j. However, many customers use the open source frameworks installed on their EMR clusters to process and log inputs from untrusted sources. Therefore, AWS recommends that you apply the "EMR Bootstrap Action Solution for Log4j CVE-2021-44228".
+
+2. EMR EC2 inspector?
+>>> EC2 Inspector will show the CVE-2021-44228 vulnerability but if you are not processing inputs from untrusted sources ( non-https/ssl) then you are not affected. You can apply the BA to fix the reported vulnerability by inspector.
+
+3. BA actions?
+>>> you will need to terminate and create you clusters (transient/persistence) in order to apply for the provided BAs. For some major versions, the BAs are only available in the latest minor versions. You can use the default S3 bucket location or download the BA script to a local S3 bucket and use it (them) on cluster start-up.
+
+4. ETA on permanent solution for new minor major versions?
+>>> there's no ETA set by the Service Team at this moment but I can assure you that the team is working hard to release minor and/or major versions which include the fix on a permanent basis.
+
+5. Custom AMI vs BA?
+>>> This is purely the customer's choice we cannot make recommendations on this. Custom AMI maintained by customer whereas BAs are maintained by us. This might be the factor to decide on.
+
+6. Which versions are affected?
+Please follow the documentation [1] where you will find the list of affected versions and their application BAs scripts.
+
+I hope you find the above summary helpful. Should you have any questions or concerns please update the case and I will be more than happy to assist.
+
+In the meantime, keep well and stay safe.
+
+Reference
+[1] https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-log4j-vulnerability.html 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Senele S.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9353758761&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Wed Dec 22 2021
+13:23:25 GMT+0530 (India Standard Time)
+07:57:39 AM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: Hi Senele
+07:57:51 AM Senele Sithole: Hello, my name is Senele Sithole.  I'm here to help you today.
+07:58:04 AM Senele Sithole: Can I get your name please?
+07:58:17 AM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: I am Pravin.
+07:58:30 AM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: Currently we have EMR clusters running and need to clarify if the log4j s handled with newer emr versions
+08:00:18 AM Senele Sithole: Hi Pravin,
+
+We have released BA actions at this moment for most of all our versions.
+08:00:57 AM Senele Sithole: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-log4j-vulnerability.html 
+08:01:23 AM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: Is it fine to have a chime call ?? one of my team aws engineer too have few questions
+08:01:49 AM Senele Sithole: yeah sure let me set it up, give me a moment.
+08:02:19 AM Senele Sithole:  please join here
+
+You have been invited to an online meeting, powered by Amazon Chime.
+
+Click to join the meeting: https://chime.aws/3949370930 
+Meeting ID: 3949 37 0930
+A headset is recommended or you may use your computer’s microphone and speakers.
+
+Call in using your phone:
+United States Toll-Free (1): +1 855-552-4463
+Meeting ID: 3949 37 0930
+One-click Mobile Dial-in (United States (1)): +1 206-462-5569,,,3949370930#
+United States (1): +1 206-462-5569
+International: https://chime.aws/dialinnumbers/ 
+Dial-in attendees must enter *7 to mute or unmute themselves.
+
+To connect from an in-room video system, use one of the following Amazon Chime bridges:
+SIP video system: 3949370930@meet.chime.in  or meet.chime.in
+H.323 system: 13.248.147.139 or 76.223.18.152
+If prompted enter the Meeting PIN: 3949370930#
+
+Download Amazon Chime at https://aws.amazon.com/chime/download 
+For information about creating an Amazon Chime account, see https://aws.amazon.com/chime/getting-started 
+
+08:02:37 AM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: thanks
+08:09:04 AM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: I am changing my network and connecting.. just a moment.
+08:35:38 AM Senele Sithole: I will summarise our call on the ticket reply, cheers Pravin
+08:38:19 AM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: Thanks Senele for your support
+
+
+
+AWS_165387667510_Contributor/pravinks@optum.com (Role)
+
+
+Wed Dec 22 2021
+13:23:02 GMT+0530 (India Standard Time)
+.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+68. Chat: Need Clarification in Critical Patch Updates
+
+Dear Ramkumar,
+
+It was pleasure talking to you over phone call today.
+
+As per the Oracle Doc ID 2827611.1, Oracle doesn’t believe the Database products to be affected by vulnerability CVE-2021-44228.
+
+Please find the attachment of Doc ID 2827611.1 for your reference.
+
+Also, I referred below document which also confirms that it is not affecting RDS Oracle.
+
+[+] https://aws.amazon.com/security/security-bulletins/AWS-2021-006/ 
+
+As per your confirmation over phone call, I am marking this case as closed.
+
+Please feel free to reach out to me in case of any further questions or concerns and I'll be glad to assist you.
+
+Hope you have a great day ahead and stay safe!
+
+Please let us know if we helped resolve your issue: 
+
+ If YES, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9334089941&language=en&questionnaireId=Support-HMD-Yes 
+
+ If NO, click here: 
+https://console.aws.amazon.com/support/feedback?eventId=9334089941&language=en&questionnaireId=Support-HMD-No 
+
+To see the file named '2827611.1.pdf' included with this correspondence, please use the case link given below the signature.
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Veeramani A.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9334089941&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+Attachments
+2827611.1.pdf
+
+Amazon Web Services
+
+
+Sat Dec 11 2021
+13:42:22 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Dear Ramkumar,
+
+It was pleasure talking to your over chime call.
+
+Please find below the summary of our conversation:
+
+1) We were discussing about how frequent is the patch list in AWS once Oracle releases a new patches. 
+
+According to our AWS documentation: Amazon RDS incorporates bug fixes from Oracle by using their quarterly Database Patch Set Updates (PSUs).  
+
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Oracle.PatchComposition.html 
+
+2) You are concerned about this patch Oracle Security Alert for CVE-2021-44228 since you have got an email from Oracle Corporation to apply this security fix.
+
+3) It seems to be application related security fix. However, we don't want to take any chance in it. We AWS are concerned about our Customers security guidelines.
+
+4) I have reached out to my internal team with high severity asking whether this security alert has anything to do with Oracle RDS instance, as we are concerned about this and would like to know RDS would be applying on your behalf and how to proceed on this. Please note that it might take some time to get an update from the AWS internal team on this. But please be rest assured that I'll provide you with the updates as soon as I hear back from them. Till then I will keep the case status in 'Pending Amazon Action'.
+
+Please let me know if you have any further questions, I will be happy to help. Thanks again for your understanding! 
+
+Stay safe and have a great day.
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Veeramani A.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9334089941&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Sat Dec 11 2021
+10:42:35 GMT+0530 (India Standard Time)
+05:16:26 AM Veeramani A: Hello, my name is Veeramani A.  I'm here to help you today.
+05:16:46 AM assumed-role/AWS_165387667510_Owner/rajendrra@optum.com: HI Veeramani
+Hope you are doing Good
+05:17:16 AM Veeramani A: I am doing good. Thanks
+05:17:21 AM Veeramani A: How are you ?
+05:17:34 AM assumed-role/AWS_165387667510_Owner/rajendrra@optum.com: Basically try to get some knowledge on how RDS critical security Patching works
+05:17:38 AM assumed-role/AWS_165387667510_Owner/rajendrra@optum.com: I am doing Great
+05:17:53 AM Veeramani A: sure. Please give me a moment
+05:18:54 AM Veeramani A: From the case correspondence I understand that you want to know about the patches and updates with AWS RDS oracle as  Oracle Critical Patch Update
+05:19:36 AM Veeramani A: Please correct me if I misunderstood your query.
+05:19:47 AM assumed-role/AWS_165387667510_Owner/rajendrra@optum.com: Yes 
+05:20:15 AM assumed-role/AWS_165387667510_Owner/rajendrra@optum.com: Also on how frequent is the patch list in AWS world once Oracle release an new patches
+05:20:29 AM Veeramani A: According to our AWS documentation: Amazon RDS incorporates bug fixes from Oracle by using their quarterly Database Patch Set Updates (PSUs).  
+05:20:35 AM Veeramani A: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Oracle.PatchComposition.html 
+05:20:56 AM Veeramani A: The updates, before being available are thoroughly verifies so that you can be confident that your DB instance is running a version of the database software that has been tested by both Oracle and Amazon.
+05:21:12 AM Veeramani A: Thus once the new update is available it will be applied in a maintenance window duration depending on the auto patching settings at the time.
+05:21:39 AM Veeramani A:  you can also refer to our AWS document: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Maintenance.html 
+05:23:15 AM assumed-role/AWS_165387667510_Owner/rajendrra@optum.com: So let's say there is a critical patch released from Oracle today so it get's reflected in AWS World after a Quarter. May I know if this is accurate
+05:26:28 AM Veeramani A: security patches may not necessarily be released every quarter
+05:27:17 AM assumed-role/AWS_165387667510_Owner/rajendrra@optum.com: So May I know when does it get released in AWS
+05:29:36 AM Veeramani A: it depends on how AWS verifies the patch. As per our AWS Doc
+05:29:38 AM Veeramani A: Maintenance items that require a resource to be offline include required operating system or database patching. Required patching is automatically scheduled only for patches that are related to security and instance reliability. Such patching occurs infrequently (typically once every few months) and seldom requires more than a fraction of your maintenance window.
+
+
+05:29:50 AM Veeramani A: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Maintenance.html 
+05:31:54 AM assumed-role/AWS_165387667510_Owner/rajendrra@optum.com: Well I am still don't understand. If possible could we connect on a chime session
+05:33:30 AM Veeramani A: sure
+05:33:30 AM Veeramani A: Click to join the meeting: https://chime.aws/3892234527 
+Meeting ID: 3892 23 4527
+
+
+
+AWS_165387667510_Owner/rajendrra@optum.com (Role)
+
+
+Sat Dec 11 2021
+10:42:22 GMT+0530 (India Standard Time)
+Hi All,
+
+We could like to understand on how frequent the Oracle Critical Patches are applied on RDS once it's released by Oracle Corporation.
+
+We could like to apply the recent security patch (Oracle Security Alert for CVE-2021-44228) across multiple AWS account.
+
+Feel free to share us the docs, pre-requites (if any)
+Regards,
+Ramkumar
+ARN of RDS instance: 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+69. Chat: Task gets timed out with shorter time frame
+
+Hello,
+
+We haven't heard back from you regarding case 9331171221 for a while. For continued support regarding the same issue, you can contact us any time using the following URL:
+https://console.aws.amazon.com/support/home?#/case/?caseId=9331171221&displayId=9331171221&language=en 
+
+Please note that no action is required on your part if you wish this case to be resolved. However, if you want to close this case yourself, you could do so via the Support Center. If we haven't heard back from you within the next 168 hours we will mark the case as Resolved, although you can re-open the case any time using the link above.
+
+Best Regards,
+
+Amazon Web Services
+
+
+Amazon Web Services
+
+
+Fri Dec 10 2021
+18:39:36 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Hi Pravin,
+
+This is Martin again from AWS Premium Support. It was a pleasure to chat with you today.
+
+As advised on the chat, please see a brief summary of our chat conversation below.
+
+The issue you were facing was a timeout error from your AWS Lambda function “arn:aws:lambda:us-east-1:165387667510:function:MSTR-AMI”. We looked at the AWS Lambda Function and noticed that the timeout error matched the timeout value configured for this AWS Lambda Function. Once the timeout value was increased the AWS Lambda Function completed its execution successfully. Additionally, you advised that you need to complete further testing and wished for the case to remain open. Please note, this case will stay open for 10 days. After 10 days the ticket will automatically close, but, you can still reopen the case for an additional 14 days.
+
+I hope this information is clear and helpful to you. If anything is unclear, or if you have additional questions about this. Please reach out to me and I will happily provide clarity, or, assist you as best I can. 
+
+Wishing you and your team all the best.
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Martin R.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9331171221&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Fri Dec 10 2021
+18:03:15 GMT+0530 (India Standard Time)
+00:40:38 PM Martin R: Hello, my name is Martin R.  I'm here to help you today.
+00:41:09 PM Martin R: Can I get your name please?
+00:41:11 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: Hi Martin,
+00:41:15 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: I am Pravin kumar
+00:41:33 PM Martin R: Hi Pravin, I hope you are doing well today.
+00:42:13 PM Martin R: From my understanding you are getting timeouts from an AWS Lambda function. 
+00:42:26 PM Martin R: Could you please provide some additional details?
+00:42:26 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: to brief you in short, I created a lambda function to invoke Image builder pipeline. However, I do three activities within the same lambda python code.
+00:43:34 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: firstly, Create image builder recipe. Secondly, Update the image builder pipeline with that recipe and third boto3 request is to start running the pipeline.
+00:44:49 PM Martin R: And can you confirm you are getting the timeout on the third part of the process?
+00:45:06 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: create recipe works and even I notice pipeline also gets updated with the recipe, however after that I see error as "task timed out in 3 seconds" 
+00:45:17 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: infact all these will happen in less than a minute.
+00:45:30 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: yes correct 
+00:46:02 PM Martin R: As you said you see an error, is this error from the AWS ]lambda logs?
+00:46:19 PM Martin R: If so could you please share here the full error message?
+00:46:59 PM Martin R: Additionally, are these Ec2 images you are building?
+00:47:57 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: yes from Lambda logs.
+00:49:00 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: I am trying to update the image builder pipeline and run it, to get the AMI output.
+00:49:28 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: 2021-12-10T17:52:25.414+05:30
+
+Copy
+2021-12-10T12:22:25.411Z a2c643ab-d133-4b15-9be3-d8580a812eb0 Task timed out after 3.00 seconds
+
+2021-12-10T12:22:25.411Z a2c643ab-d133-4b15-9be3-d8580a812eb0 Task timed out after 3.00 seconds
+00:49:29 PM Martin R: OK, thanks. Can you please provide the name of this AWS Lambda Fuction.
+00:49:42 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: MSTR-AMI
+00:49:58 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: arn:aws:lambda:us-east-1:165387667510:function:MSTR-AMI
+00:50:15 PM Martin R: Thanks, I can see from looking at your resources that the timeout value for this function is set to 3 seconds.
+00:50:33 PM Martin R: Have you tried increase the timeout value for this AWS Lambda Function?
+00:50:59 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: Oops I haven't tested it. one second
+00:51:08 PM Martin R: sure, thanks.
+00:53:11 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: I updated it and re-testing now.
+00:53:50 PM Martin R: Thanks, I can see it is update to 243 seconds.
+00:58:53 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: I think that was the reason and it went fine now..
+00:59:08 PM Martin R: Excellent. 
+00:59:15 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: Let me spend some time and do few more testing and do let you know.
+00:59:22 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: but really thanks for help
+00:59:25 PM Martin R: Is there anything else I can help you with today?
+00:59:33 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: I hope that is all for now
+01:00:03 PM Martin R: Thanks, I will send you a brief summary of our conversation. Are you happy for me to resolve this case? or would you rather I keep it open?
+01:01:09 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: Would be better if this is open for some time so that I can complete my other testings too
+01:01:48 PM Martin R: Thanks, that is no worries at all. I will of course leave the case open. I hope you have a great rest of day.
+01:02:00 PM assumed-role/AWS_165387667510_Contributor/pravinks@optum.com: Thanks again
+01:02:11 PM Martin R: No worries, I will close this chat now, happy testing!
+
+
+
+AWS_165387667510_Contributor/pravinks@optum.com (Role)
+
+
+Fri Dec 10 2021
+18:02:54 GMT+0530 (India Standard Time)
+Hi Team,
+
+Task gets timed out with shorter time frame, as I am trying to update and invoke a resource alone from Lambda function.
+
+Thanks,
+Pravin
+Function ARN: 
+Error message: 
+CloudWatch logs: 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+70. Chat: how to scan for vulnerablity with aws inspector while creating AMI
+
+Hello,
+
+We haven't heard back from you regarding case 9325947341 for a while. For continued support regarding the same issue, you can contact us any time using the following URL:
+https://console.aws.amazon.com/support/home?#/case/?caseId=9325947341&displayId=9325947341&language=en 
+
+Please note that no action is required on your part if you wish this case to be resolved. However, if you want to close this case yourself, you could do so via the Support Center. If we haven't heard back from you within the next 168 hours we will mark the case as Resolved, although you can re-open the case any time using the link above.
+
+Best Regards,
+
+Amazon Web Services
+
+
+Amazon Web Services
+
+
+Fri Dec 10 2021
+16:31:07 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Hello Surendar,
+
+Thank you for your time on the case.
+
+As mentioned on the chime call, below are the findings for the use-case that you have:
+
+We are doing the deployment using Cloudformation template wherein the template creates an Image Builder pipeline and using Ansible playbook, you can customise the configuration as per your requirement. Below is the workflow:
+
+1. Deploy the CloudFormation templates.
+
+2. The template creates an Image Builder pipeline
+
+3. AWS Systems Manager completes the AMI build process.
+
+4. Amazon EC2 starts an instance to build the AMI.
+
+5. Systems Manager starts a test instance build after the first build is successful.
+
+6. The AMI starts provisioning.
+
+7. The Amazon Inspector CIS benchmark starts.
+
+So, if you refer to the diagram mentioned in the link below, in the test phase the inspector would run to inspect the AMI and then the report would be generated by the inspector which you would see on the Inspector AWS console. You can use the Image Builder pipeline to simply update the Ansible playbooks with the settings, then run the Image Builder pipeline to build a new AMI, deploy the new AMI to an EC2 Instance, and run the Amazon Inspector report to ensure that the issue has been resolved. Finally, we can see the specific instances that have been assessed that have this issue.
+
+https://aws.amazon.com/blogs/devops/deploying-cis-level-1-hardened-amis-with-amazon-ec2-image-builder/ 
+
+Answering the question:
+
+1. How to integrate the SSM patch manager with AWS Image builder 
+       (To patch the AMI before it creates in image builder)
+
+You can try the integration as explained in the below documentation i.e to selectively install or update patches on operating systems of supported AMIs, you can author an Image Builder component to install the required patches. A custom component can install patches using shell scripts (Bash or PowerShell), or it can use the UpdateOS action module to specify patches for installation or exclusion. For more information, see Action modules supported by AWSTOE component manager.
+
+https://docs.aws.amazon.com/imagebuilder/latest/userguide/vulnerability-analysis-and-management.html 
+
+2. How to remediate the Inspector findings while creating the AMI itself
+
+For inspector, we need an EC2 instance as it only runs inside an EC2 to validate anything, so this will not work while creating the AMI itself.
+
+I would like to inform you that both the scanning and remediation would need two different steps and cannot be done at once like you would have to create separate configuration for the same.
+
+Please try out the custom settings as per the details explained above since this is a custom requirement and you would have to make changes accordingly to achieve the use case. However, feel free to discuss this via call and we can take this further.
+
+Have a great day ahead!
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Manisha S.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9325947341&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Fri Dec 10 2021
+11:28:59 GMT+0530 (India Standard Time)
+As per our discussion, Kindly check and let us know
+1. How to integrate the SSM patch manager with AWS Image builder 
+       (To patch the AMI before it creates in image builder)
+2. How to remediate the Inspector findings while creating the AMI itself
+
+
+AWS_P0001489@optum.com
+
+
+Fri Dec 10 2021
+10:57:48 GMT+0530 (India Standard Time)
+05:28:16 AM Manisha S: Hello, my name is Manisha S.  I'm here to help you today.
+05:29:06 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: HI My name is surendar
+05:29:15 AM Manisha S: Hello Surendar
+05:29:21 AM Manisha S: checking the case details.
+05:29:53 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: I wanted to know, how to scan for AMI vulnerability while it is creating itself in image builder
+05:30:24 AM Manisha S: I got your query, however would need yo check on this as we are not sure if this can be done. 
+05:30:28 AM Manisha S: please allow me sometime
+05:30:36 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: okay
+05:30:42 AM Manisha S: Thanks
+05:36:40 AM Manisha S: The inspector-test-component AWS managed component is pre-built for performing vulnerability with Amazon Inspector in EC2 Image Builder.
+05:38:58 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: but how to remediate this that is another question
+05:39:07 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: can we have a call to discuss about this
+05:39:44 AM Manisha S: yes sure, please give me sometime
+05:41:01 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: okay
+05:45:05 AM Manisha S: ok, so just wanted you to know that you would need to create a custom scripted component to use a different set of package with Amazon Inspector.
+05:45:13 AM Manisha S: let me send you the chime link
+05:45:34 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: okay
+05:46:10 AM Manisha S: https://chime.aws/8000104563 
+06:01:11 AM Manisha S: https://aws.amazon.com/blogs/devops/deploying-cis-level-1-hardened-amis-with-amazon-ec2-image-builder/ 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+71. Chat: AWS CLI Command not working in userdata
+
+Hi Arun, 
+
+Thank you for connecting with me earlier today. I am sending this as a follow up for your record.
+
+In our conversation we discussed that you are facing an issue that is specific to the 6.2 release of EMR.
+When you run the below command via SSM "aws ec2 modify-instance-metadata-options --instance-id $ec2Id --http-endpoint enabled --http-token required", you are getting this message "You must specify a region. You can also configure your region by running "aws configure"."
+
+SSM is what is considered a global service, which means it is unaware of the region that it is being run in. 
+With the suggestion of "aws configure" you are setting up a default region and as a result of a default region you would not be asked for a region.
+
+With ---region (e.g. us-west-1) you are not using a default but specifying exactly.
+My suggestion in your case (for now) would be to use the --region as if it works you are not creating any additional problems by specifying a region and also ensuring that a global service is aware of your request.
+SSM is a valuable service and we encourage engineers to use it as it.
+
+Few things to remember and some suggestions: 
+- The version can make a difference esp. considering this is a major upgrade (5.x to 6.x) and when making upgrades of this nature it is important to test as it appears you are doing before moving to a production release. 
+- If possible, please try and use 6.2.1 as the x.x.1 change is usually a "patch" or fix for known issues and is usually a better version without major software upgrades.
+- If you are looking to migrate and have the capacity to do a full upgrade I would always suggest the lastest release 6.5 at the moment as service teams are consistently improving software quality so if possible I'd go as high as possible.
+But obviously if you have version dependencies etc. then whatever works best for you!
+
+Please let me know if you have any follow up questions and I hope you have a good day further.
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+David S.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9309628501&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Mon Dec 06 2021
+15:15:51 GMT+0530 (India Standard Time)
+09:48:41 AM David Sobey: Hello, my name is David.  I'm here to help you today.
+09:48:45 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: hi David
+09:48:55 AM David Sobey: Hi Arun, how are you today?
+09:48:55 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: My name is Arun
+09:49:25 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: I'm good. How are you?
+09:49:32 AM David Sobey: I am good thank you.  
+09:49:36 AM David Sobey: I have read through the case
+09:49:55 AM David Sobey: I can see that you are facing an issue that is specific to the 6.2 release of EMR.
+09:50:23 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: This is not happened in this AWS account.
+09:50:44 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: This is our other team part of our Org
+09:50:46 AM David Sobey: Ok
+09:50:57 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: But still wanted to know why this issue happens
+09:51:11 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: As it is creating lot of security violations.
+09:51:30 AM David Sobey: So just an FYI I cannot provide cross account support.
+09:51:51 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: Sorry. i do not mean cross account support.
+09:52:24 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: When we run the below command "aws ec2 modify-instance-metadata-options --instance-id $ec2Id --http-endpoint enabled --http-token required"
+09:52:38 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: We are getting this message "You must specify a region. You can also configure your region by running "aws configure"."
+09:52:46 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: What may be the reason for that message?
+09:53:37 AM David Sobey: Where is this being run on a B.A?
+09:53:37 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: If i run the same command with --region, it seems to be working. 
+09:54:02 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: B.A ?
+09:54:09 AM David Sobey: Sorry bootstrap action"
+09:54:22 AM David Sobey: Or run in SSM?
+09:54:37 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: Actually, we tried it in bootstrap actiion.
+09:54:45 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: it was not enabled.
+09:54:53 AM David Sobey: Yeah ok
+09:54:57 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: We then tried to run in SSM command, got the above message
+09:55:04 AM David Sobey: Ok I understand
+09:55:13 AM David Sobey: So SSM is what is considered a global service
+09:56:16 AM David Sobey: Which means it is unaware of the region that it is being run in.  With the suggestion of "aws configure" you are setting up a default region.
+With ---region (e.g. us-west-1) you are not using a default but specifying exactly.
+09:57:12 AM David Sobey: My suggestion in your case (for now) would be to use the --region as if it works you are not creating any additional problems by specifying a region and also ensuring that a global service is aware of your request.
+09:57:32 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: ok. 
+09:58:08 AM David Sobey: Cool no problem.  SSM is a valuable service and we encourage engineers to use it as it.
+09:58:26 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: Will it because of the difference between emr label version.
+09:59:17 AM David Sobey: The version can make a difference esp. considering this is a major upgrade (5.x to 6.x) but I am not part of the development team so I am not aware of the internals.
+10:00:52 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: Also, wanted you to confirm whether 6.2.0 supports metadata option in security configuration
+10:00:53 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: https://aws.amazon.com/about-aws/whats-new/2021/03/amazon-emr-now-supports-amazon-ec2-instance-metadata-service-v2/ 
+10:01:38 AM David Sobey: Checking this documentation quickly.
+10:02:11 AM David Sobey: Yup I am sure that is accurate.
+10:02:23 AM David Sobey: Two quick suggestions if I may?
+10:02:31 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: Sure.
+10:02:34 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: Please tell me
+10:03:20 AM David Sobey: If possible, please try and use 6.2.1 as the x.x.1 change is usually a "patch" or fix for known issues and is usually a better version without major software upgrades.
+10:03:24 AM David Sobey: 2..
+10:04:16 AM David Sobey: If you are looking to migrate and have the capacity to do a full upgrade I would always suggest the lastest release 6.5 at the moment as service teams are consistently improving software quality so if possible I'd go as high as possible 
+10:04:36 AM David Sobey: But obviously if you have version dependencies etc. then whatever works best for you!
+10:04:45 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: ok. that's great. Thanks for your suggestion.
+10:04:52 AM David Sobey: Sure
+10:04:55 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: We will try to use the latest one.
+10:05:11 AM David Sobey: Great, any other questions I can help with?
+10:05:29 AM David Sobey: I will send a follow up mail which you can respond to as well as keep for record of our conversation.
+10:05:41 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: Thats all from. 
+10:05:47 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: me
+10:05:58 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: Thanks for your time and valuable suggestions.
+10:06:02 AM David Sobey: Great thanks Arun hope you have a good day further
+10:06:07 AM David Sobey: No problem.
+10:06:12 AM assumed-role/AWS_165387667510_Owner/arunkumar@optum.com: You too.
+10:06:16 AM David Sobey: Bye :)
+
+
+
+AWS_165387667510_Owner/arunkumar@optum.com (Role)
+
+
+Mon Dec 06 2021
+15:15:34 GMT+0530 (India Standard Time)
+Hi Team,
+
+In one of our AWS Account(Account Number: 526621796011), we are facing an issue whenever an EMR Cluster is provisioned. Enabling EC2 Metadata V2 is mandatory in our org and in some of our EMR Cluster, we have used bootstrap action to enable ec2 metadata with the below command.
+
+aws ec2 modify-instance-metadata-options --instance-id $ec2Id --http-endpoint enabled --http-token required
+
+The above command works when we use in the label emr 5.30 where it didn't worked in 6.2.0 
+
+But when we try to run the command from SSM for the ec2 instances in 6.2.0 emr cluster, we get this error "You must specify a region. You can also configure your region by running "aws configure"."
+
+So, if we specify --region in the command, it worked.
+
+Though we are trying to use --region but wanted to understand what may be the issue.  Is that because any AMI related issue?
+
+
+Regards,
+Arun
+EMR Cluster-id: 
+Bootstrap Action name/id: 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+72. Chat: Oracle RDS is not able to access S3
+
+Dear Customer,
+
+It was a pleasure to assist you today via chat. Please find a quick summary of our conversation below.
+
+As updated in the last case summary notes, after you have removed the bucket policy from the S3 bucket with deny you are able to download the files from S3 to the RDS instance.
+
+I hope you find the above information answered your queries and should you require any more information or assistance please let me know and I will be glad to assist.
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Keshav J.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9274246691&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+Amazon Web Services
+
+
+Mon Nov 29 2021
+19:20:06 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Dear Customer,
+
+Thank you for contacting AWS Premium Support. My name is Keshav and I will be assisting you today with this case.
+
+From the case description I understand that you have issues with the S3 integration with the RDS instance. Please feel free to correct me if I have mistaken or missed any concerns.
+
+Please allow me to explain that I have verified the RDS instance "dts" which is integrated with the S3 option group which is active, further I have verified the IAM role attached to the RDS instance which has required access to the s3 bucket "165387667510-ram" and I see the bucket is attached to the bucket policy with deny, can you please remove this policy or remove the deny and then test the downloads from S3 to RDS. Please refer below links for more information.
+
+[+] Amazon S3 integration - https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-s3-integration.html 
+[+] Amazon S3 integration - Prerequisites for Amazon RDS for Oracle integration with Amazon S3  - https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-s3-integration.html#oracle-s3-integration.preparing 
+
+I hope you find the above information answered your queries and should you require any more information or assistance please let me know and I will be glad to assist.
+
+Hope you have a great day ahead!
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Keshav J.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9274246691&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Mon Nov 29 2021
+19:05:36 GMT+0530 (India Standard Time)
+01:49:01 PM Keshav J: Hello, my name is Keshav J.  I'm here to help you today.
+01:50:28 PM assumed-role/AWS_165387667510_Owner/rajendrra@optum.com: Hi Keshav
+01:50:54 PM Keshav J: May I know your name please
+01:51:01 PM assumed-role/AWS_165387667510_Owner/rajendrra@optum.com: This is Ram
+01:52:20 PM Keshav J: Hello Ram, Hope you are doing good
+01:52:40 PM Keshav J: I have sent a correspondence on the case can you verify that
+01:53:28 PM assumed-role/AWS_165387667510_Owner/rajendrra@optum.com: Let me remove the S3 deny and have it right away
+01:53:41 PM Keshav J: sure
+01:55:51 PM assumed-role/AWS_165387667510_Owner/rajendrra@optum.com: I do see that the S3 policy with Deny access is applicable only to the resources matching with particular tags value
+01:57:37 PM Keshav J: ok can you remove it and test
+01:58:57 PM Keshav J: or if you have other S3 bucket with out any policy of Deny
+01:59:39 PM assumed-role/AWS_165387667510_Owner/rajendrra@optum.com: It seems to be working now but facing no disk space issue in RDS
+02:01:38 PM Keshav J: ok, can you confirm whats the size of the file downloading
+02:01:49 PM Keshav J: I see only 17GB is free on the RDS instance
+02:03:19 PM Keshav J: https://us-east-1.console.aws.amazon.com/cloudwatch/home?region=us-east-1&redir=1#metricsV2:graph=~(metrics~(~(~'AWS*2fRDS~'FreeStorageSpace~'DBInstanceIdentifier~'dts) )~stat~'Average~period~60~start~'2021-11-29T10*3a28*3a27Z~end~'2021-11-29T11*3a28*3a27Z~region~'us-east-1)
+02:03:59 PM Keshav J: please refer above link for more information
+02:05:19 PM assumed-role/AWS_165387667510_Owner/rajendrra@optum.com: Okay
+02:05:45 PM assumed-role/AWS_165387667510_Owner/rajendrra@optum.com: I will add additional volume and re-try again, keshav
+02:05:46 PM assumed-role/AWS_165387667510_Owner/rajendrra@optum.com: Thanks
+02:06:34 PM Keshav J: ok if you want to test now, u can try to download small size file just to see if the S3 feature works
+02:10:06 PM assumed-role/AWS_165387667510_Owner/rajendrra@optum.com: Okay
+02:10:07 PM assumed-role/AWS_165387667510_Owner/rajendrra@optum.com: sure 
+02:10:19 PM Keshav J: ok
+02:11:33 PM assumed-role/AWS_165387667510_Owner/rajendrra@optum.com: It's working and I was able to download a small file
+02:11:55 PM Keshav J: Thats great, I will send a summary in the case in some time then
+02:12:10 PM Keshav J: do you need any more information please let me know
+02:19:34 PM Keshav J: are you there Ram?
+02:19:47 PM assumed-role/AWS_165387667510_Owner/rajendrra@optum.com: yes
+02:20:04 PM assumed-role/AWS_165387667510_Owner/rajendrra@optum.com: No additional information requried, Keshav
+Thanks
+02:20:41 PM Keshav J: ok fine Ram, please feel free to close the chat I will send summary in the case in some time
+02:20:49 PM Keshav J: Have a nice day
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+73. Call: Clarify on the base AMI features
+
+Hello Pravin,
+
+Uday here again from AWS Linux team, I'm following up on this case!
+
+Thank you so much for your patience while I checked your concern with our service team. Also, i would like to sincerely apologize for the inconvenience you might have experienced because of the delay. With that said, I'm glad to let you know that I've received a response from them - 
+
+Unfortunately, the features(OSSEC/Shred SSH) are not provided by the Base AmazonLinux and AmazonLinux2 AMIs provided by AWS. 
+
+However, if you are creating your own AMis using Ec2 Image Bulder and with AWS provided AmazonLinux AMIs as the parent AMIs, you need to write own custom EC2 Image Builder components to do this. None of the AWS provided Image Builder components provide these capabilities.
+
+Please note that EC2 Image Builder also runs cleanup/sanitization scripts at the end of execution(once all the Build components) are executed as a Security Best practice. Here's the link[1] for the cleanup script. So if the customer is making any changes to the SSH setting(or anything else) that are being reverted in the cleanup script, please follow the guide[2] to override the cleanup/house-keeping/sanitization scripts.
+
+I trust this correspondence proves useful. Should you have any other questions or need additional clarification, please feel free to get back to us and we will be happy to assist you.
+
+Stay safe and take care!
+
+References:
+=========
+[1] Security best practices for EC2 Image Builder
+https://docs.aws.amazon.com/imagebuilder/latest/userguide/security-best-practices.html 
+
+[2] Override the Linux housekeeping script
+https://docs.aws.amazon.com/imagebuilder/latest/userguide/security-best-practices.html#override-linux-housekeeping-script 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Uday
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9272785681&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+Amazon Web Services
+
+
+Mon Nov 29 2021
+11:28:32 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Hello Pravin,
+
+Uday here from AWS Linux team, I'm here to assist you with this case!
+
+Thank you so much for your call. 
+
+As confirmed on the call, I shall confirm these details to you in sometime.
+
+Until then, I am keeping the case locked to myself with its status set to 'Pending Amazon Action'.
+
+In the meantime, if you have any further queries and/or concerns, please do let me know.
+
+Stay safe and take care!
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Uday
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9272785681&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_165387667510_Contributor/pravinks@optum.com (Role)
+
+
+Mon Nov 29 2021
+11:16:48 GMT+0530 (India Standard Time)
+Hi,
+
+Need to clarify if the OSSED HIDS, Shred ssh is taken care within the base AMI provided by Amazon or is there any Amazon native components available to get these installed ?
+
+Thanks,
+Pravin
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+74. Pipeline failure
+
+Hello Pravin,
+
+Thanks for your time on call today. To recap, you reached out to us as you were seeing issue with the Image Pipeline - ImageBuilderPipelineLinuxMSTR.
+
+We verified the failed execution and noticed that pipeline is timing out on WaitForInstanceToSpinUp step. After checking in detail, we found that instance created by pipeline was failed to launch due to Client.InternalError. While we were troubleshooting the issue, you were able to identify the KMS key used to encrypt the root volume is disabled. 
+
+The instance was able to launch successfully after modifying the required configuration. I also verified internally and able to confirm that launch was failed due to disabled KMS key - arn:aws:kms:us-east-1:165387667510:key/0383aaed-02b1-4938-86e2-4ff9a46498e2.
+
+As per our discussion, I checked further and this information is documented in following article:
+
+Client.InternalError: https://aws.amazon.com/premiumsupport/knowledge-center/ec2-client-internal-error/ 
+
+1.    Run the describe-instances API to verify the StateReason error message and error code. The following is an example of the command output if there is an encrypted volume attached to the instance and there are permissions or policy issues:
+
+aws ec2 describe-instances --instance-ids i-xxxxxxxxxxxxxxxxx
+"StateReason": {
+     "Message": "Client.InternalError: Client error on launch",
+     "Code": "Client.InternalError"
+   },
+
+2.    Verify the following:
+-  The AWS Key Management Service (AWS KMS) key used to encrypt the volume is enabled.  <<==
+-  The user trying to start the instance has the correct IAM permissions.
+-  The key has the correct key policies.
+
+
+Please feel free to reach out to us if you need further assistance with the Pipeline. 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Neha R.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9225432951&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+Amazon Web Services
+
+
+Mon Dec 06 2021
+08:51:18 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Hello Pravin,
+
+Please join screen sharing session with following URL
+https://screenshare.aws/?ak=ad1dd477f5b25fa18c253b9fd82e2a6a 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Neha R.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9225432951&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+
+75. How to implement Regional DR for the RDS
+
+Hello Team,
+
+A very warm greeting from AWS Premium Support RDS Team. My name is Ruz and I will be the engineer assisting with your case today.
+
+From your case description, I understand that you would like guidance on how to implement Regional DR for the RDS. 
+
+Generally, to achieve the same you can consider having to set up (1) Automated backups (2) Manual snapshots and (3) Read replicas which are the supported DR mechanisms in RDS for either single region or can span across regions.
+
+That said, I have included the below official documentation [+] which gives comprehensive details on the supported DR capabilities in RDS as well as detailed steps on how to configure such in RDS. Please may you kindly review the below documentation [+] for further information to this issue.
+
+[+] https://aws.amazon.com/blogs/database/implementing-a-disaster-recovery-strategy-with-amazon-rds/ 
+
+I hope the information was helpful. If you have additional queries or concerns, please feel free to add them to the case notes and I will be more than happy to help you.
+
+Have an AWSome day ahead and stay safe!
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Ruz G.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9216114321&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Wed Nov 17 2021
+19:17:10 GMT+0530 (India Standard Time)
+How to implement Regional DR for the RDS
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+76. Chat: Is it necessary to stop instances before taking a snapshot of the root volume?
+
+Hello Surendar,
+
+Greetings of the day!
+
+This is Radhika from AWS Premium Support. Thank you for your time on chat today. It was a pleasure assisting you. Kindly find the below summary for the same:
+
+You reached out to us as it was mentioned in the article-[1] that it is required to stop the instance before taking snapshot of the root volume. You wanted to know if it is mandatory to stop the instance before taking the snapshot of the root volume.
+
+As conveyed on chat, snapshots of root volume can be taken while the instance is in running state and it is not mandatory to stop the instance. It is just a recommendation by AWS to stop the instance before taking a snapshot of an EBS volume that serves as a root device to ensure the snapshot consistency. Further, I went ahead and replicated the behaviour in my lab environment and was able to successfully create a snapshot of the root volume of my running instance in my lab environment using boto3.
+
+Further, you wanted to know if this is the same for both platforms to which I confirmed to you that you can create snapshots of your root volume of running instances for both Linux and Windows platforms. 
+
+I hope this helps. As confirmed on chat, I will be marking this case as resolved. Please feel free to open a new case if you encounter any issue or need our assistance with anything.
+
+Stay safe and take care!
+
+References:
+
+[1] https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_snapshot 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Radhika K.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9209241431&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+Don’t miss messages from AWS Support when you need help! Update your contact information:
+https://console.aws.amazon.com/billing/home#/account 
+
+If you receive an error message when visiting the contact information page, visit:
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-billing-access/ 
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Tue Nov 16 2021
+12:50:15 GMT+0530 (India Standard Time)
+07:20:46 AM Radhika K: Hello, my name is Radhika K.  I'm here to help you today.
+07:21:23 AM Radhika K: May i have your name please while I pull up the case details
+07:21:59 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: My name is surendar
+07:22:11 AM Radhika K: Hope you are doing well surendar
+07:22:44 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Yes, Thanks. hope you doing great !!!!!
+07:23:19 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: from the article i got to know that, we should stop the instance before taking snapshot(only root volumes)
+07:23:47 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: is it mandatory to stop the instance to take snapshot of root volume 
+07:24:03 AM Radhika K: Okay. Please allow me sometime to check this.
+07:24:18 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Okay
+07:25:05 AM Radhika K: Please could you confirm how you are taking the snapshot?
+07:25:16 AM Radhika K: Example: using aws console or boto3
+07:28:33 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: boto3
+07:30:48 AM Radhika K: Okay. Please could you share the instance ID in concern.
+07:31:26 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: i-0a242c3678d99fb65
+07:31:40 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: vol-081283c8151d0d9c7
+07:31:45 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: root volume
+07:32:05 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: please check both linux and windows
+07:32:34 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Now i have shared the linux instance ID, but we will take snapshot for both platforms using boto3
+07:32:46 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: so please confirm for both platforms
+07:34:10 AM Radhika K: Could you confirm what type of workload is on this instance?
+07:35:03 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: it could be anything
+07:35:28 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: because we will take snapshot for multiple instances 
+07:35:44 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: so we dont know what type of workloads are running 
+07:38:37 AM Radhika K: I would like to inform you that the snapshot can be taken while instance is running and it is not mandatory to stop the instance. However, that is just a recommendation by AWS.
+07:39:32 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Thanks for your confirmation.
+07:39:52 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: just to confirm again, it is for both linux and windows platform ??
+07:40:23 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: we can take snapshot of root volumes (windows | Linus )with stopping instances 
+07:40:41 AM Radhika K: Yes it is same for both the platforms
+07:41:45 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: thanks
+07:41:53 AM Radhika K: You're welcome
+07:42:05 AM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: we can close the case
+07:42:35 AM Radhika K: Sure. I will be sending a summary email and marking the case as resolved.
+07:42:44 AM Radhika K: Thank you for your time on chat
+
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Tue Nov 16 2021
+12:50:05 GMT+0530 (India Standard Time)
+connection was lost, connecting again
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Tue Nov 16 2021
+12:49:32 GMT+0530 (India Standard Time)
+As noted in the article below, instances should be stopped before taking snapshots of root volumes.
+
+https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_snapshot 
+
+
+""To create a snapshot for Amazon EBS volumes that serve as root devices, you should stop the instance before taking the snapshot."""
+Instance ID(s): 
+Timestamp (YYYY-MM-DD HH:MM:SS UTC): 
+
+
+>>>>>>>>>>>>>>>>>.
+
+77. Chat: Need clarification on taking backup
+
+Hi Surendar,
+
+This is Niall, the AWS Premium Support Engineer that spoke with you on the chat earlier, it was a pleasure speaking with you today.
+
+As discussed, you had questions on completing activities on your AWS resources while backups were in progress and you wanted to know if it's recommended to perform these actions while the backup is in progress.
+
+As mentioned on the chat, it's recommended that you allow the backup to complete before performing any maintenance on your resource such as patching an EC2 instance. You can however, continue to use your resources as normal while backups are in progress for normal day to day use cases, however, when it comes to preforming maintenance, it's best to let the backup complete before starting any patching or similar maintenance. 
+
+In addition to the above, you also had questions on event notifications for AWS backup so that you could receive a notification when the backup is completed successfully, this would allow you to start maintenance work on your resources automatically. As mentioned on the chat, you can configure SNS notifications for "backup job completed" events, you can then set the endpoint for your SNS notification as a Lambda function and then configure the lambda function to complete the required tasks to start the maintenance/patching of your resources. 
+
+For your reference, I am including the following article which walks through configuring event notifications for the AWS backup service, the steps in this article will help get you started with creating an event notification[1]. The following article also walks through creating an SNS topic[2]
+
+As agreed on the chat, I will resolve this case for now. I hope that I was able to explain everything in a clear and concise manner. If not, please do let me know.
+If you have any more queries or other concerns, please don't hesitate to include in this case.
+     
+Have a great day ahead and take care!
+
+References:
+[1] Configuring notifications to monitor AWS Backup jobs - https://aws.amazon.com/blogs/storage/configuring-notifications-to-monitor-aws-backup-jobs/  
+[2] Creating an Amazon SNS topic - https://docs.aws.amazon.com/sns/latest/dg/sns-create-topic.html 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Niall C.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9186617101&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Thu Nov 11 2021
+17:39:06 GMT+0530 (India Standard Time)
+00:12:44 PM Niall  : Hello, my name is Niall.  I'm here to help you today.
+00:12:53 PM Niall  : May I get your name while I review the case details?
+00:14:11 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Hi My name is surendar
+00:15:44 PM Niall  : Hi Surendar, nice to meet you. From reviewing the case, I understand that you would like to know if you should wait for a backup to complete before stating other dependent activities. Is that correct?
+00:17:11 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: Yes 
+00:18:36 PM Niall  : Thank you for confirming, can you confirm what you are referring to when you say "dependent activities" are you referring to starting another backup while one backup is already in progress for the same resource?
+00:19:19 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: No , other activities like patching the server 
+00:20:12 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: we are going to patch via aws system manager (patch manager)
+00:20:44 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: so before patching, we wanted to take a backup of server (AMI backup)
+00:21:56 PM Niall  : Ok, thank you for confirming, I understand. Please allow me a few moments to confirm if there will be any impact of performing an activity such as patching before the backup has completed.
+00:23:04 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: okay
+00:28:15 PM Niall  : Thank you for your patience, if you are performing patching on your server, it's best to wait for the backup to complete before starting the patching. You can continue to use the resource as normal while the backup is in progress but if you are performing maintenance on the resource, it's best to let the backup complete first before starting the maintenance.
+00:33:01 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: okay is there any way that we can get programmatic way to know backup completion 
+00:33:23 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: i mean, once backup completes patching activity should start automatically
+00:33:42 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: so is there any way that we know programmatic way 
+00:36:48 PM Niall  : You can configure notifications for your AWS backup events such as "Backup Job Completed" to trigger an SNS notification. You could then configure the SNS notification to invoke a lambda function that starts your patching activity. Further information on AWS Backup notifications can be found here:
+https://docs.aws.amazon.com/aws-backup/latest/devguide/sns-notifications.html 
+00:37:22 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: how about boto3
+00:38:39 PM Niall  : You can use the AWS Boto3 Python SDK in your Lambda function to process the SNS notification and complete further actions based on your Lambda function
+00:39:30 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: is it possible for you to check is there any customer was asked this query before 
+00:39:44 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: and let me know possiblities 
+00:39:48 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: is it possible
+00:42:47 PM Niall  : Ok, I can quickly check if similar requests have been made by customers before, however, due to the number of cases, it's not possible to review all the cases. However, as I have mentioned that you can configure Backup event notifications using SNS, you can then invoke a Lambda function from the event and based on the code in your Lambda function you can then perform some action.
+00:42:56 PM Niall  : Please allow me a few moments to review similar cases.
+00:43:22 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: thanks
+00:49:55 PM Niall  : Thank you for your patience, I have been unable to locate similar customer requests due to the volume of cases we receive. However, the following article walks through monitoring AWS backup Jobs, the steps in this guide will get you started with configuring the notification and SNS topic, from there you can configure the SNS topic to send the notification to the Lambda function.
+https://aws.amazon.com/blogs/storage/configuring-notifications-to-monitor-aws-backup-jobs/ 
+00:50:29 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: okay thanks
+00:50:33 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: we can close the case
+00:50:37 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: thanks for the support
+00:51:07 PM Niall  : You're welcome surendar, is there anything else I can help you with before ending the chat?
+00:51:26 PM assumed-role/AWS_165387667510_Contributor/surendar.s@optum.com: no thanks
+00:51:50 PM Niall  : Ok, thank you for your time today surendar, I will end the chat now. Bye, have a nice day :) 
+
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Thu Nov 11 2021
+17:38:58 GMT+0530 (India Standard Time)
+connecting again
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Thu Nov 11 2021
+17:36:14 GMT+0530 (India Standard Time)
+The scenario is: If we initiate the backup, should we wait until the backup is complete before starting other dependent activities or can they be started immediately?
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+78. Chat: SNS notification for Shield
+
+Hi Atchaya,
+
+Jean-Pierre here again from AWS Premium Support.
+
+As promised, this serves as a summary of the chat we had a few moments ago.
+
+We discussed if it was possible to set up the SNS topic notification for a protected resource via the CLI. 
+
+At this moment, the only method to configure this mechanism is via the Console[1]. There is currently no method to configure this CLI or programmatically.
+
+As discussed, I will proceed to mark this as resolved. 
+
+Have a AWSome day further!
+
+--------------
+References:
+--------------
+[1] Configuring AWS Shield Advanced protections -  Create alarms and notifications - https://docs.aws.amazon.com/waf/latest/developerguide/manage-protection.html#add-alarm-ddos 
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Jean-Pierre R.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9185474551&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_P0001489@optum.com
+
+
+Thu Nov 11 2021
+12:35:26 GMT+0530 (India Standard Time)
+07:05:40 AM JP Roux: Hello, my name is JP Roux.  I'm here to help you today.
+07:06:10 AM JP Roux: How are you today? May I get your name?
+07:06:16 AM assumed-role/AWS_165387667510_Contributor/asamina1@optum.com: Hello Atchaya
+07:07:04 AM assumed-role/AWS_165387667510_Contributor/asamina1@optum.com: Hi JP, typo here. I'm Atchaya
+07:07:18 AM JP Roux: No stress at all. :) 
+07:07:22 AM JP Roux: Allow me a few moments to review the case noets.
+07:07:24 AM JP Roux: notes*
+07:07:32 AM assumed-role/AWS_165387667510_Contributor/asamina1@optum.com: sure
+07:11:07 AM JP Roux: To clarify what you trying to achieve -> https://docs.aws.amazon.com/waf/latest/developerguide/manage-protection.html#add-alarm-ddos  ?
+07:15:37 AM assumed-role/AWS_165387667510_Contributor/asamina1@optum.com: Yes, I achieved this by manual configuration in console. Now, I want to automate this step (Attaching existing SNS topic to  protected service). For that, I'm referring awscli command but have a doubt whether this feature is available in cli?
+07:16:37 AM JP Roux: Ah perfect, so yes indeed. This feature is currently not available from a CLI perspective. I do see that we have a feature request for this. I can proceed to add your voice to it. However, I cannot provide an ETA on when this feature will be implemented. As, Premium Support does not have visibility into the service teams roadmap.
+07:17:09 AM assumed-role/AWS_165387667510_Contributor/asamina1@optum.com: okay
+07:17:29 AM assumed-role/AWS_165387667510_Contributor/asamina1@optum.com: Any idea about boto3 feature for this?
+07:17:50 AM JP Roux: At this moment, the only method to configure this is via the Console. 
+07:17:58 AM assumed-role/AWS_165387667510_Contributor/asamina1@optum.com: okay
+07:18:16 AM assumed-role/AWS_165387667510_Contributor/asamina1@optum.com: Thank you so much.
+07:18:35 AM JP Roux: Its a pleasure. I do apologize for the limitation around configuring this. Is there anything else I can assist you with today? 
+07:19:09 AM assumed-role/AWS_165387667510_Contributor/asamina1@optum.com: No JP.
+07:19:12 AM assumed-role/AWS_165387667510_Contributor/asamina1@optum.com: thank you
+07:19:32 AM JP Roux: Perfect, should I proceed to mark this as resolved for you? :)
+07:19:38 AM assumed-role/AWS_165387667510_Contributor/asamina1@optum.com: yes
+07:19:47 AM JP Roux: I will do so. Have a splendid day further.
+07:20:19 AM JP Roux: I will close off this chat now and send a summary response via case " 9185474551 ".
+
+
+
+AWS_165387667510_Contributor/asamina1@optum.com (Role)
+
+
+Thu Nov 11 2021
+12:35:14 GMT+0530 (India Standard Time)
+Hello Team,
+
+I have attached the SNS topic to the Shield protected service manually. But I am unable to find the proper awscli command to attach the SNS topic with Shield protected service. Could you please help me on this?
+
+>>>>>>>>>>>>>>>>>>>>>
+
+79. Breaking down RDS spend in Cost Explorer (without Tags)
+
+Good Morning!
+
+I've received an update from our service team. They've stated they unfortunately do not support resource level data for RDS at this time, only EC2. 
+
+I apologize for any inconvenience this may have caused.
+
+I will be updating this case to a status of resolved as it seems no further action is needed, but please do not hesitate to reach out if you have any further questions or concerns.
+
+Thank you and have a wonderful day!
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Marc R.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9177289181&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+Amazon Web Services
+
+
+Wed Nov 10 2021
+23:50:52 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+Excellent
+
+
+Translate
+
+Good Afternoon! 
+
+I'm following up to let you know I have your case locked to myself and am working with the service team on your RDS spend request. From my knowledge, getting that granular in Cost Explorer can be challenging, but I believe what you're seeking can be found in the the monthly billing .csv file. 
+
+However, this is only accessible through the Payer ending in 6488 as linked accounts do not have access to these .csv files as all billing is handled by the payer. I've attached an example of what that would look like to this email and filtered column P to 'db.t3.medium'. The results appear to reference different instances, but if not please let me know. 
+
+I will follow up with our service team just to be safe that I'm not missing anything from a cost explorer standpoint being able to view this data.
+
+Once I receive an update from the service team I will be happy to follow back up with you!
+
+I appreciate your patience and have a great day!
+
+${attachment-start}
+To see the file named 'DB.t3.medium - Optum.xlsb' included with this correspondence, please use the case link given below the signature.
+${attachment-end}
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Marc R.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9177289181&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+Attachments
+DB.t3.medium - Optum.xlsb
+
+AWS_165387667510_Contributor/wyatt_andersen@optum.com (Role)
+
+
+Wed Nov 10 2021
+00:33:22 GMT+0530 (India Standard Time)
+Hello! Is it possible to break down RDS spend by database Instance in AWS Cost Explorer (without tags)? I can isolate RDS spend, and I can split that up by Instance Type (db.t3.medium vs db.t3.large), but if I have multiple db.t3.medium instances (as an example) how would I see just one of them by itself? If I had "DB instance" as a filter that would do it, or if the "Resource" Filter worked on RDS instances not just EC2 that would be what I'm looking for.  
+
+I think this is solvable with Tagging. Just wondering if I can get Instance level granularity in Cost Explorer without Tags.
+
+Thanks!
+
+>>>>>>>>>>>>>>>>>>>>>>
+
+80. Chat: Need help in Remediation
+
+i have executed the command successfully,
+yum install ntp-4.2.8p15-3.amzn2.0.4.x86_64 -y
+yum install ntpdate-4.2.8p15-3.amzn2.0.4.x86_64 -y
+
+yum update ntp-4.2.8p15-3.amzn2.0.4.x86_64 -y
+yum update ntpdate-4.2.8p15-3.amzn2.0.4.x86_64 -y
+
+and CVE ID - CVE-2021-35942 is gone now. thanks for your support
+
+
+Amazon Web Services
+
+
+Wed Nov 10 2021
+19:49:37 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Hello,
+
+Hope you are well.
+
+I can see that you have mentioned that the issue is still persisting at your end. I apologize for the inconvenience caused to you due to the same.
+
+Can you please mention the Assessment ARN of the scan where the CVE shows up even after patching with the below command? Also, can you please add if the commands mentioned below are giving you any kind of error.
+
+I also noticed that you tried to initiate the chat, but were not connected. I'd suggest you to try calling, if this is an urgent issue. Otherwise, you can mention your availability here, and we can set up a call for us to troubleshoot the issue together.
+
+That said, please provide the above details, which can assist me in investigating on your issue deeply.
+
+Have a nice day ahead.
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Akshita N.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9176118021&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+
+AWS_165387667510_Contributor/surendar.s@optum.com (Role)
+
+
+Wed Nov 10 2021
+12:24:46 GMT+0530 (India Standard Time)
+Still the issue is persist
+
+
+Amazon Web Services
+
+
+Tue Nov 09 2021
+21:38:31 GMT+0530 (India Standard Time)
+Was this response helpful? Click here to rate:
+
+
+Translate
+
+Hello,
+
+Hope you are well.
+
+Unfortunately, we could not connect on the call, as you were not available. However, I did research on your issue. Please find the below findings and suggestions for the same.
+
+Just to quickly recap, you are looking to find a remediation for the CVE ID - CVE-2021-35942 for your Amazon Linux 2 instance.
+
+As I investigated on this query, I found that the Amazon Linux Security Center portal for the security updates, does have the updates for this CVE, available from 2021-09-15 onwards, but these updates might not be appearing in repositories. This was a known issue at our end.
+
+https://alas.aws.amazon.com/alas2.html 
+
+However, this issue is fixed for now, and the packages are available in the repositories again. Please use the below commands to check if you can install them in your Amazon Linux 2 Instance - 
+
+-------------------------------------------------------------------------------------------------------------------------
+
+# yum list ntp-4.2.8p15-3.amzn2.0.4.x86_64
+Failed to set locale, defaulting to C
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Available Packages
+ntp.x86_64                                                                                                          4.2.8p15-3.amzn2.0.4                                                                                                          amzn2-core
+
+# yum list ntpdate-4.2.8p15-3.amzn2.0.4.x86_64
+Failed to set locale, defaulting to C
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Available Packages
+ntpdate.x86_64                                                                                                        4.2.8p15-3.amzn2.0.4                                                                                                        amzn2-core
+
+-------------------------------------------------------------------------------------------------------------------------
+
+That said, I'd request you to please try installing these updates with the above commands again on your Instance, and please revert back on the mail, if the issue still persists.
+
+As I'll be ending my shift now, I won't be able to have a call with you. However, we can set up the same for tomorrow, once you revert back with the suggested resolution above.
+
+I hope the above information helps you in remediating that CVE.
+
+Have a nice day ahead.
+
+We value your feedback. Please share your experience by rating this correspondence using the AWS Support Center link at the end of this correspondence. Each correspondence can also be rated by selecting the stars in top right corner of each correspondence within the AWS Support Center.
+
+Best regards,
+Akshita N.
+Amazon Web Services
+
+===============================================================
+
+To share your experience or contact us again about this case, please return to the AWS Support Center using the following URL: https://console.aws.amazon.com/support/home#/case/?displayId=9176118021&language=en 
+
+Note, this e-mail was sent from an address that cannot accept incoming e-mails.
+To respond to this case, please follow the link above to respond from your AWS Support Center.
+
+===============================================================
+
+AWS Support:
+https://aws.amazon.com/premiumsupport/knowledge-center/ 
+
+AWS Documentation:
+https://docs.aws.amazon.com/ 
+
+AWS Cost Management:
+https://aws.amazon.com/aws-cost-management/ 
+
+AWS Training:
+http://aws.amazon.com/training/ 
+
+AWS Managed Services:
+https://aws.amazon.com/managed-services/ 
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+81. 
 
